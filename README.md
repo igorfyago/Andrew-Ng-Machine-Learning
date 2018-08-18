@@ -1,4 +1,4 @@
-# Machine Learning with Aitor and Igor
+# Machine Learning with Aitor & Igor
 
 One Paragraph of project description goes here
 
