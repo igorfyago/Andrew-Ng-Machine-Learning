@@ -1,5 +1,3 @@
-# machine_learning_shared
+# Machine_Learning_shared
+# Gradient_Descent_Algorithm
 
-welcom aitor jara
-
-Welcome bitch
