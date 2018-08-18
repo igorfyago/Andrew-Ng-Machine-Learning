@@ -1,3 +1,0 @@
-print('Suck my balls')
-
-// no... thanks
