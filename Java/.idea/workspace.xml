@@ -103,7 +103,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="105" />
     <option name="width" value="1824" />
     <option name="height" value="1039" />
@@ -258,7 +258,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="84" y="0" width="1459" height="831" extended-state="1" />
+    <frame x="84" y="0" width="1459" height="831" extended-state="0" />
     <layout>
       <window_info id="Designer" />
       <window_info id="UI Designer" />
