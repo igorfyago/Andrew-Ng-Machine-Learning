@@ -1,0 +1,468 @@
+WEBVTT
+
+1
+00:00:01.690 --> 00:00:04.690
+Hello, and welcome to Python for
+Everybody, my name's Charles Severance.
+
+2
+00:00:04.690 --> 00:00:09.510
+In this short video, I will be
+explaining how to run exercise 2.3
+
+3
+00:00:09.510 --> 00:00:13.710
+where we prompt for some hours,
+prompt for some rates, and
+
+4
+00:00:13.710 --> 00:00:17.800
+multiply them together, and
+print them out with a little pay message.
+
+5
+00:00:17.800 --> 00:00:22.900
+And so, this is 2.3,
+some of you will immediately
+
+6
+00:00:22.900 --> 00:00:26.820
+want to go to the autograder, and sort
+of do your homework in the autograder.
+
+7
+00:00:26.820 --> 00:00:33.460
+I really rather you didn't do that, unless
+of course you're doing this on an iPad,
+
+8
+00:00:33.460 --> 00:00:37.480
+or an Android, or something where
+you can't install Python, but
+
+9
+00:00:37.480 --> 00:00:41.470
+you have to realize that the autograder
+isn't forever. You can only go so
+
+10
+00:00:41.470 --> 00:00:45.470
+far with the autograder, and eventually,
+you have to write a real Python program.
+
+11
+00:00:45.470 --> 00:00:48.490
+So, I'll eventually show you
+how to run this autograder,
+
+12
+00:00:48.490 --> 00:00:51.880
+but I'm going to instead show you
+how to run it in the terminal.
+
+13
+00:00:53.280 --> 00:00:57.220
+So, I'm first going to go into my
+Python for Everybody folder, and
+
+14
+00:00:57.220 --> 00:01:00.945
+I'm going to make a new folder,
+command Shift+N is what I just did there,
+
+15
+00:01:00.945 --> 00:01:07.640
+ex_02_03, for Exercise 3, so
+there's exercise 3. And
+
+16
+00:01:07.640 --> 00:01:14.510
+I'm also going to go into Atom, which is my
+text editor, and see I have that folder.
+
+17
+00:01:16.520 --> 00:01:20.700
+And so, I'm going to make a new file, and
+
+18
+00:01:20.700 --> 00:01:25.768
+I will say print,
+I'll just say PY4E, oops,
+
+19
+00:01:25.768 --> 00:01:30.708
+PY4E, and then I will say File,
+Save As, and
+
+20
+00:01:30.708 --> 00:01:37.587
+I want to make sure it's in here,
+and it's going to be ex_02.
+
+21
+00:01:37.587 --> 00:01:42.412
+I don't like putting spaces in file names,
+some operating systems can't handle them,
+
+22
+00:01:42.412 --> 00:01:45.160
+that's why I'm using underscores here,
+
+23
+00:01:45.160 --> 00:01:47.530
+so I would avoid using spaces in file names.
+
+24
+00:01:47.530 --> 00:01:52.530
+So as soon as I give that a PY4E,
+as soon as I
+
+25
+00:01:52.530 --> 00:01:57.980
+give it a python suffix I'm there, and
+so it shows up there in my desktop,
+
+26
+00:01:57.980 --> 00:02:02.952
+and now I'm going to run the terminal
+program, so that I can get there.
+
+27
+00:02:02.952 --> 00:02:10.390
+So, cd Desktop/ cd py4e/ 
+That's the folder on my desktop,
+
+28
+00:02:10.390 --> 00:02:16.170
+If I do an ls I see a couple folders and
+a file, you can say ls -l and see a little
+
+29
+00:02:16.170 --> 00:02:21.840
+more detail that these are folders, these
+two are folders, and this one's a file.
+
+30
+00:02:21.840 --> 00:02:26.989
+So change directory cd ex_02_03, and
+
+31
+00:02:26.989 --> 00:02:32.407
+so now I'm in that folder,
+and if I do an ls -l,
+
+32
+00:02:32.407 --> 00:02:38.230
+I see that file. I can also do an ls 
+without the -l, and see the file.
+
+33
+00:02:38.230 --> 00:02:46.918
+And now I say
+python3 ex_02_03.py, and it runs.
+
+34
+00:02:46.918 --> 00:02:50.876
+And you'll see me,
+no matter how many times you watch me,
+
+35
+00:02:50.876 --> 00:02:55.731
+you'll see that the first thing that I do,
+is get to the point where I know I'm
+
+36
+00:02:55.731 --> 00:02:59.614
+in the right directory, and
+I can run a little hello program,
+
+37
+00:02:59.614 --> 00:03:04.050
+before I start coding.
+I just don't like being crazy, right?
+
+38
+00:03:04.050 --> 00:03:06.550
+So now, I'm going to go back and
+
+39
+00:03:06.550 --> 00:03:11.110
+take a look at my assignment, Enter Hours,
+you've got a prompt for hours, ask for
+
+40
+00:03:11.110 --> 00:03:15.380
+a number, Enter Rate, prompt for
+rate, and then calculate Pay.
+
+41
+00:03:15.380 --> 00:03:20.370
+So, there's a couple of input statements
+here, xh is my variable I'm going to
+
+42
+00:03:20.370 --> 00:03:23.630
+choose, later I'll choose more
+effective variables, but for
+
+43
+00:03:23.630 --> 00:03:31.310
+now I'm going to make them silly,
+Enter Hours, colon, space.
+
+44
+00:03:31.310 --> 00:03:37.570
+And then I'm going to copy, and
+paste and call this xr for rate.
+
+45
+00:03:38.710 --> 00:03:42.347
+When you're doing this,
+
+46
+00:03:42.347 --> 00:03:47.139
+you need to be very careful to, and
+
+47
+00:03:47.139 --> 00:03:51.437
+so now I'm going to calculate xp times,
+
+48
+00:03:51.437 --> 00:03:57.740
+which is xh * xr, and I'll say print Pay.
+
+49
+00:04:01.303 --> 00:04:05.360
+I don't need to put a space because this
+comma effectively creates a space, xp.
+
+50
+00:04:07.750 --> 00:04:12.150
+And then I want to save that, and I'm
+going to switch to my terminal program,
+
+51
+00:04:13.460 --> 00:04:18.670
+clear my screen in my terminal program,
+and I'm going type up arrow,
+
+52
+00:04:18.670 --> 00:04:21.895
+because I already typed
+python3 ex_02_03.py.
+
+53
+00:04:22.972 --> 00:04:27.038
+So my hours, I'll just start with
+something really simple that
+
+54
+00:04:27.038 --> 00:04:29.610
+I can calculate in my head, 10 and 5.
+
+55
+00:04:31.011 --> 00:04:37.702
+Whoops, can't multiply
+sequence of non-int of,
+
+56
+00:04:37.702 --> 00:04:42.430
+by sequence of non-int of type str.
+
+57
+00:04:42.430 --> 00:04:44.360
+Here we have a traceback,
+
+58
+00:04:44.360 --> 00:04:49.670
+and again I encourage you to realize
+that these tracebacks are not
+
+59
+00:04:49.670 --> 00:04:53.690
+personal attacks by Python on you,
+even though they might be frustrating.
+
+60
+00:04:55.510 --> 00:04:59.060
+And so the way to parse this
+is start by saying line 3,
+
+61
+00:04:59.060 --> 00:05:02.770
+something's wrong at line 3, it's
+pretty good at knowing what line it is, or
+
+62
+00:05:02.770 --> 00:05:05.920
+it's either that line or
+the line above it, and
+
+63
+00:05:05.920 --> 00:05:10.900
+it's something about multiplying.
+What it's really saying is
+
+64
+00:05:10.900 --> 00:05:15.740
+I'm confused, I have to stop because I
+cannot understand your instructions.
+
+65
+00:05:15.740 --> 00:05:21.290
+So, the problem here of course
+is that this is of type string. 
+
+66
+00:05:21.290 --> 00:05:24.700
+And so you can't multiply
+a string times a string.
+
+67
+00:05:24.700 --> 00:05:30.670
+Okay, and so we can convert this
+using a float, float, so that's
+
+68
+00:05:30.670 --> 00:05:35.780
+a function call now, we're passing the
+string xh in, and the value we get back
+
+69
+00:05:35.780 --> 00:05:39.510
+is the floating point version of that,
+and then, we call float for this as well.
+
+70
+00:05:42.300 --> 00:05:47.486
+And so now I'll save that,
+always remember to save.
+
+71
+00:05:47.486 --> 00:05:51.567
+I'm going to run it, and so
+I'm going to run it my hours of 10, and
+
+72
+00:05:51.567 --> 00:05:56.590
+my rate of 10, and it's 100, and so
+that looks pretty good, okay?
+
+73
+00:05:56.590 --> 00:06:01.591
+So let's go ahead and
+try to run this in the autograder, and
+
+74
+00:06:01.591 --> 00:06:06.891
+this is my idea, is you'll take this and
+you'll copy it, and
+
+75
+00:06:06.891 --> 00:06:12.192
+you'll go back to the autograder now,
+and just paste this in, okay?
+
+76
+00:06:12.192 --> 00:06:17.193
+And so it says use 35 hours,
+and rate of 2.75,
+
+77
+00:06:17.193 --> 00:06:22.323
+so let's check the code 35 hours, OK,
+75, no 2.75.
+
+78
+00:06:22.323 --> 00:06:25.740
+And so it's running, and
+it's running, and it works, and
+
+79
+00:06:25.740 --> 00:06:28.290
+of course, now I've got my grade.
+
+80
+00:06:28.290 --> 00:06:33.130
+So this idea where you work here to
+get your assignment done correctly, and
+
+81
+00:06:33.130 --> 00:06:36.060
+then you run it in the autograder,
+is the way I intend for
+
+82
+00:06:36.060 --> 00:06:39.720
+you to do it, but
+again if you can't do it that way,
+
+83
+00:06:39.720 --> 00:06:42.590
+it's a great way to get started to just
+write your code it the autograder.
+
+84
+00:06:45.770 --> 00:06:51.946
+You can change your code in
+the autograder, and then run it again.
+
+85
+00:06:51.946 --> 00:06:57.036
+Of course, this is going to fail,
+35, and 2.75.
+
+86
+00:06:57.036 --> 00:07:01.245
+And of course you get a mismatch, and
+now it's angry at you, and
+
+87
+00:07:01.245 --> 00:07:05.454
+the mismatch here, of course, is because
+I print Howdy Pay and Pay, and
+
+88
+00:07:05.454 --> 00:07:09.870
+it's real picky about it, and
+you think I've got the 96.25 right.
+
+89
+00:07:09.870 --> 00:07:12.708
+Well, it doesn't really care so
+much about that.
+
+90
+00:07:12.708 --> 00:07:18.440
+So, let me go ahead and fix this, and
+run it so we leave on a successful note
+
+91
+00:07:19.960 --> 00:07:25.785
+35 hours, and
+2.75 is the rate per hour,
+
+92
+00:07:25.785 --> 00:07:29.720
+kind of a lower rate per hour,
+and we're getting successful.
+
+93
+00:07:29.720 --> 00:07:34.920
+And of course that means that you
+now have a grade on assignment 2.3,
+
+94
+00:07:34.920 --> 00:07:38.150
+look at that, I got a grade on
+assignment 2.3, unless of course,
+
+95
+00:07:38.150 --> 00:07:41.260
+you're running these in some
+other environment, okay?
+
+96
+00:07:41.260 --> 00:07:45.082
+Thank you so much, and
+I hope that this has been useful to you.

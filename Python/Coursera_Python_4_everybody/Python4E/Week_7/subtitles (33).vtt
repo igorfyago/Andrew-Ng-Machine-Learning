@@ -1,0 +1,683 @@
+WEBVTT
+
+1
+00:00:09.029 --> 00:00:12.370
+So now we're going to talk about
+what we're trying to accomplish with
+
+2
+00:00:12.370 --> 00:00:13.200
+a loop, right?
+
+3
+00:00:13.200 --> 00:00:16.104
+We're trying to,
+we know how they mechanically work but
+
+4
+00:00:16.104 --> 00:00:17.383
+what are we looking for?
+
+5
+00:00:17.383 --> 00:00:19.762
+What if we're looking for
+the largest value or
+
+6
+00:00:19.762 --> 00:00:22.629
+checking to see if 42 is
+a member of a set or something?
+
+7
+00:00:22.629 --> 00:00:26.588
+Or looking for the largest letter,
+like the max function?
+
+8
+00:00:26.588 --> 00:00:31.428
+And so we're going to construct loops sort
+of with an idea of doing something to each
+
+9
+00:00:31.428 --> 00:00:34.359
+value in the set that
+we're iterating through.
+
+10
+00:00:34.359 --> 00:00:37.720
+And then coming up with
+some kind of result.
+
+11
+00:00:37.720 --> 00:00:41.770
+And the pattern that we're going to do
+is we're going to write a for loop.
+
+12
+00:00:41.770 --> 00:00:45.012
+And actually, in this next two segments,
+I'm going to do the exact same for loop.
+
+13
+00:00:45.012 --> 00:00:47.601
+But we're going to do something
+before the loop starts,
+
+14
+00:00:47.601 --> 00:00:49.464
+set some variables to initial values.
+
+15
+00:00:49.464 --> 00:00:56.434
+And then we're going to do something
+to every one of the values in our list.
+
+16
+00:00:56.434 --> 00:01:00.759
+And then, we don't know what the largest
+value is while the loop is running.
+
+17
+00:01:00.759 --> 00:01:05.020
+And our goal is, when the loop finally
+finishes, that we have something.
+
+18
+00:01:05.020 --> 00:01:08.166
+Whether it's the maximum,
+the minimum, the average, the total,
+
+19
+00:01:08.166 --> 00:01:10.940
+how many things there are,
+how many things match.
+
+20
+00:01:10.940 --> 00:01:16.747
+And so, the iterations are getting
+us closer to knowing the answer.
+
+21
+00:01:16.747 --> 00:01:20.970
+But they don't instantly know the answer,
+so we we have to work towards the answer.
+
+22
+00:01:20.970 --> 00:01:24.067
+By setting something and
+then sort of checking it a bunch of times.
+
+23
+00:01:24.067 --> 00:01:27.310
+And then we have sort of have absolute,
+the truth comes out at the bottom.
+
+24
+00:01:27.310 --> 00:01:30.699
+And you'll see this in a second.
+
+25
+00:01:30.699 --> 00:01:32.240
+So here's the little loop
+that we're going to do.
+
+26
+00:01:32.240 --> 00:01:35.554
+And I'm going to do this over and
+over and over again, and these numbers,
+
+27
+00:01:35.554 --> 00:01:37.558
+you're going to get
+tired of these numbers.
+
+28
+00:01:37.558 --> 00:01:43.822
+For some variable, iteration
+variable in 9, 41, 12, 3, 74, 15.
+
+29
+00:01:43.822 --> 00:01:44.970
+We print out a before.
+
+30
+00:01:44.970 --> 00:01:46.580
+So we're going to do
+something before the loop.
+
+31
+00:01:46.580 --> 00:01:48.660
+We're going to do something during
+the loop and after the loop.
+
+32
+00:01:48.660 --> 00:01:50.000
+Right now,
+I'm just printing everything out.
+
+33
+00:01:50.000 --> 00:01:55.067
+So you kind of see how
+the loop kind of works, okay?
+
+34
+00:01:55.067 --> 00:01:57.651
+Okay, so here's a little problem.
+
+35
+00:01:57.651 --> 00:02:01.686
+I'm going to show you a number of
+numbers and maybe it'll be a million or
+
+36
+00:02:01.686 --> 00:02:03.782
+maybe it'll be 6, I don't know.
+
+37
+00:02:03.782 --> 00:02:06.248
+But you don't know how many
+I'm going to show you.
+
+38
+00:02:06.248 --> 00:02:11.700
+And I want you to tell me when it's all
+said and done what the largest number is.
+
+39
+00:02:11.700 --> 00:02:12.780
+And it's not going to be too hard.
+
+40
+00:02:12.780 --> 00:02:15.440
+But imagine that you had to do this for
+a million numbers as a human being.
+
+41
+00:02:15.440 --> 00:02:18.999
+That you were just sitting there and
+numbers going by and by and by and by.
+
+42
+00:02:18.999 --> 00:02:21.993
+How would your brain
+truly solve the problem?
+
+43
+00:02:21.993 --> 00:02:23.332
+So here, ready?
+
+44
+00:02:23.332 --> 00:02:24.992
+Here goes some numbers.
+
+45
+00:02:40.471 --> 00:02:41.300
+So did you get it?
+
+46
+00:02:42.300 --> 00:02:43.230
+Did you get the largest number?
+
+47
+00:02:44.350 --> 00:02:48.235
+It's not so much interesting about
+what the largest number was.
+
+48
+00:02:48.235 --> 00:02:49.380
+It wasn't that many numbers.
+
+49
+00:02:49.470 --> 00:02:56.200
+What was your brain doing to sort of 
+track that problem, to solve that problem?
+
+50
+00:02:56.200 --> 00:02:58.800
+What was your brain doing? And what if you 
+really had to do that for a million numbers?
+
+51
+00:02:58.800 --> 00:03:00.540
+And they were not little
+tiny numbers either,
+
+52
+00:03:00.540 --> 00:03:02.510
+they were sort of medium-size numbers.
+
+53
+00:03:02.510 --> 00:03:04.950
+And you had to do a million of them,
+what would be your technique?
+
+54
+00:03:04.950 --> 00:03:08.550
+Other than running away,
+because humans aren't good at this.
+
+55
+00:03:08.550 --> 00:03:11.300
+But what would be the precise
+technique that you'd use?
+
+56
+00:03:12.910 --> 00:03:13.940
+And so here are the numbers.
+
+57
+00:03:13.940 --> 00:03:17.360
+Now actually as a human,
+we love looking at these numbers.
+
+58
+00:03:17.360 --> 00:03:22.753
+Like oh, 74 . But then you ask, like how
+did your mind exactly find them, right?
+
+59
+00:03:22.753 --> 00:03:29.307
+Our minds go, like [SOUND] there's 74.
+
+60
+00:03:29.307 --> 00:03:32.580
+Our mind doesn't look at them
+the way a computer looks at them.
+
+61
+00:03:32.580 --> 00:03:36.918
+It just kind of zooms in on 74 and
+just kind of [SOUND].
+
+62
+00:03:36.918 --> 00:03:38.640
+But that's not how a computer looks them.
+
+63
+00:03:38.640 --> 00:03:46.229
+A computer has to look at them as 3,
+41, 12, 9, 74, 15.
+
+64
+00:03:46.229 --> 00:03:48.490
+I conclude at the very end that
+74 is the largest number, right?
+
+65
+00:03:50.280 --> 00:03:53.978
+But a human's just [SOUND] 74.
+
+66
+00:03:53.978 --> 00:03:56.680
+So humans think about this differently.
+
+67
+00:03:56.680 --> 00:04:02.520
+And so we have to realize, the purpose
+of that last little exercise, was to think
+
+68
+00:04:02.520 --> 00:04:07.120
+when we construct loops how computers are
+going to attack this kind of a problem.
+
+69
+00:04:07.120 --> 00:04:08.850
+They attack it sequentially.
+
+70
+00:04:08.850 --> 00:04:11.690
+They don't attack it magically
+the way we humans do.
+
+71
+00:04:13.330 --> 00:04:18.450
+And the way that you do it is you create
+in your head, and you probably did it,
+
+72
+00:04:18.450 --> 00:04:22.454
+some notion of what is the largest
+number I've seen so far.
+
+73
+00:04:22.454 --> 00:04:24.580
+Like a variable.
+
+74
+00:04:24.580 --> 00:04:27.932
+And we start and say oh, I haven't seen 
+any numbers so far, so
+
+75
+00:04:27.932 --> 00:04:29.500
+we'll stick -1 in there.
+
+76
+00:04:29.500 --> 00:04:33.080
+And then you see 3 and you go like well,
+okay, that first number
+
+77
+00:04:33.080 --> 00:04:36.170
+is also the largest I've seen so
+far, so 3 is pretty good.
+
+78
+00:04:36.170 --> 00:04:38.720
+If we stop now, and I tell you that's
+the last number, the largest number is 3.
+
+79
+00:04:38.720 --> 00:04:41.240
+It's not the largest number
+until I tell you we're done.
+
+80
+00:04:42.240 --> 00:04:45.550
+We see 41, it's like whoa,
+3 is a bad number, 41 is even better.
+
+81
+00:04:45.550 --> 00:04:49.560
+It's way better, we'll keep 41 as our so
+far, so far, so good.
+
+82
+00:04:49.560 --> 00:04:51.448
+But we're not done yet,
+we've got to keep going.
+
+83
+00:04:51.448 --> 00:04:55.724
+12, whoa, the 12 is no good because
+41 is larger, we'll keep 41.
+
+84
+00:04:55.724 --> 00:04:58.180
+9?
+9's no good, we're in really great shape.
+
+85
+00:04:58.180 --> 00:04:59.930
+Is 41 the largest?
+
+86
+00:04:59.930 --> 00:05:02.757
+No, but it is largest so
+far, so we know that much.
+
+87
+00:05:02.757 --> 00:05:07.360
+Now we see 74, whoa, that's way better
+than 41, so keep track of that one.
+
+88
+00:05:07.360 --> 00:05:11.530
+And then we go like, 15, nah
+looks like 74 is pretty good.
+
+89
+00:05:11.530 --> 00:05:14.640
+And now we're all done,
+and we see that it's 74.
+
+90
+00:05:14.640 --> 00:05:19.624
+So what happens is at the end of the loop,
+the only thing we knew was
+
+91
+00:05:19.624 --> 00:05:24.088
+the largest we saw so far and
+when I tell you we're all done.
+
+92
+00:05:24.088 --> 00:05:27.509
+Then the largest we saw so far, like
+just poof, it is the largest, right?
+
+93
+00:05:27.509 --> 00:05:29.980
+because it's all that
+we're ever going to see.
+
+94
+00:05:29.980 --> 00:05:34.000
+So that's how you have to
+construct these loops in Python.
+
+95
+00:05:34.000 --> 00:05:39.770
+So here's a bit of code that does
+this logical bit here, okay?
+
+96
+00:05:39.770 --> 00:05:41.200
+And so I'm going to make a variable.
+
+97
+00:05:41.200 --> 00:05:43.832
+And remember that variables can have 
+underscores in it, and
+
+98
+00:05:43.832 --> 00:05:46.313
+I'm going to call this
+variable the largest_so_far.
+
+99
+00:05:46.313 --> 00:05:49.380
+And I'm going to set it
+to -1 at the beginning.
+
+100
+00:05:49.380 --> 00:05:52.040
+And before the loop starts,
+remember I said there's stuff we do at
+
+101
+00:05:52.040 --> 00:05:54.950
+the beginning of the loop, and
+then stuff we do during the loop.
+
+102
+00:05:54.950 --> 00:05:58.780
+And then our payoff is after the loop,
+after the loop. Okay?
+
+103
+00:05:58.780 --> 00:06:02.250
+So before the loop we set
+the largest we've seen so far,
+
+104
+00:06:02.250 --> 00:06:05.870
+which we've seen nothing, so
+we say -1, then we print it out.
+
+105
+00:06:05.870 --> 00:06:09.480
+So before the loop largest is so
+far is -1.
+
+106
+00:06:09.480 --> 00:06:11.005
+Then we have an iteration variable,
+
+107
+00:06:11.005 --> 00:06:15.270
+the_num is going to go through
+successively 9, 41, 12, 3, 74.
+
+108
+00:06:15.270 --> 00:06:19.700
+Run this block of code five times,
+six times, once for each of those numbers.
+
+109
+00:06:19.700 --> 00:06:23.440
+And we're going to ask, if the number
+we're looking at, in this first case 9,
+
+110
+00:06:23.440 --> 00:06:25.768
+is greater than the largest so far,
+
+111
+00:06:25.768 --> 00:06:29.270
+then the largest so far is the number
+we just looked at because it's
+
+112
+00:06:29.270 --> 00:06:31.212
+bigger than the one we saw before.
+
+113
+00:06:31.212 --> 00:06:33.970
+So largest_so_far is
+the largest up to this point.
+
+114
+00:06:35.240 --> 00:06:37.790
+And then we kind of grab it basically.
+
+115
+00:06:37.790 --> 00:06:40.580
+So then we print out, for
+each iteration, the largest so far.
+
+116
+00:06:40.580 --> 00:06:43.700
+So the first time we get 9 and
+the largest we've seen so
+
+117
+00:06:43.700 --> 00:06:47.570
+far is 9 because that's the first one we
+saw and it's the largest we've seen.
+
+118
+00:06:47.570 --> 00:06:53.368
+Then we go up, we advance to 41,
+41 is the_num.
+
+119
+00:06:53.368 --> 00:06:56.929
+And then 9 is largest_so_far,
+41 is greater than it, so
+
+120
+00:06:56.929 --> 00:07:00.290
+then we stick the 41 and
+stick in largest_so_far.
+
+121
+00:07:00.290 --> 00:07:02.800
+So the largest we've seen so far is 41.
+
+122
+00:07:02.800 --> 00:07:07.409
+The one we just saw was 41,
+go up again, now 12 is going to run.
+
+123
+00:07:07.409 --> 00:07:11.338
+And so we see 12 and
+the largest so far is still 41.
+
+124
+00:07:11.338 --> 00:07:14.740
+And so we don't do anything,
+go back up, run 3,
+
+125
+00:07:14.740 --> 00:07:19.195
+we get 3, largest so far is 41,
+nothing needs to change.
+
+126
+00:07:19.195 --> 00:07:25.161
+Then we run again, we get 74, 74 runs, and
+that is the new champion largest number.
+
+127
+00:07:25.161 --> 00:07:28.629
+And then we go back one more time, 15,
+
+128
+00:07:28.629 --> 00:07:33.125
+in this code we don't know
+how many we're going to do.
+
+129
+00:07:33.125 --> 00:07:36.040
+We could do we could do 5 or 6 or
+a million, but we don't care,
+
+130
+00:07:36.040 --> 00:07:38.910
+we just keep the best we're
+doing is largest so far.
+
+131
+00:07:38.910 --> 00:07:42.326
+So we get 15 and
+the largest so far is still 74.
+
+132
+00:07:42.326 --> 00:07:45.450
+And now the for loop says 
+you're done and we come out.
+
+133
+00:07:45.450 --> 00:07:48.401
+Now, largest_so_far is actually
+
+134
+00:07:48.401 --> 00:07:52.883
+the largest in the sequence of numbers,
+which is 74.
+
+135
+00:07:52.883 --> 00:07:55.720
+So this is how,
+that's a pretty messy slide.
+
+136
+00:07:55.720 --> 00:08:00.470
+This is basically how Python can
+go through a list and looking at
+
+137
+00:08:00.470 --> 00:08:04.080
+the largest so far and then when we're
+done with the list, that is the largest.
+
+138
+00:08:04.080 --> 00:08:05.550
+So you get the idea.
+
+139
+00:08:05.550 --> 00:08:09.480
+We set something up before,
+we do something to each value, and then at
+
+140
+00:08:09.480 --> 00:08:14.230
+the end we kind of get the payoff of what
+we were looking for in the first place.
+
+141
+00:08:16.330 --> 00:08:19.290
+So up next we're going to talk
+about more of these loop idioms and
+
+142
+00:08:19.290 --> 00:08:22.850
+how to find the smallest, and how to
+count things, and how to do averages and
+
+143
+00:08:22.850 --> 00:08:24.170
+sums and stuff like that.

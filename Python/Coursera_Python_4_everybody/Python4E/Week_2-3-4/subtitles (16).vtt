@@ -1,0 +1,1129 @@
+WEBVTT
+
+1
+00:00:09.280 --> 00:00:11.080
+Hello, and welcome back to Chapter 2.
+
+2
+00:00:11.080 --> 00:00:15.480
+In this we're going to dive a little
+more in depth on the atoms,
+
+3
+00:00:15.480 --> 00:00:17.860
+the nuggets,
+the little pieces that make up Python.
+
+4
+00:00:17.860 --> 00:00:21.360
+And then we're going to work though
+our first real program that
+
+5
+00:00:21.360 --> 00:00:23.090
+has a sort of beginning, middle, and end.
+
+6
+00:00:23.090 --> 00:00:24.240
+So, here we go.
+
+7
+00:00:25.730 --> 00:00:29.840
+A big part of any programming
+language is the syntax for constants.
+
+8
+00:00:29.840 --> 00:00:32.959
+The nice thing about this
+it's kind of instinctive.
+
+9
+00:00:32.959 --> 00:00:39.280
+So, like a 123 or 98.6, numbers both
+integer and floating point numbers.
+
+10
+00:00:39.280 --> 00:00:40.870
+We've been using this on calculators.
+
+11
+00:00:40.870 --> 00:00:42.309
+They make a lot of sense to us.
+
+12
+00:00:42.309 --> 00:00:46.560
+The kind of constants that are a little
+bit different are things like string
+
+13
+00:00:46.560 --> 00:00:47.310
+constants.
+
+14
+00:00:47.310 --> 00:00:50.470
+So "Hello world" is a string constant.
+
+15
+00:00:50.470 --> 00:00:51.270
+We use that so
+
+16
+00:00:51.270 --> 00:00:55.670
+that our program can say nice things
+to people that are using our program.
+
+17
+00:00:55.670 --> 00:00:58.860
+And so, we call them constants
+because they don't change but
+
+18
+00:00:58.860 --> 00:01:00.640
+it's kind of obvious, constants.
+
+19
+00:01:00.640 --> 00:01:03.900
+It's just a piece of the language,
+so that's a constant.
+
+20
+00:01:03.900 --> 00:01:04.690
+What else?
+
+21
+00:01:04.690 --> 00:01:07.319
+Variables and reserved words.
+
+22
+00:01:07.319 --> 00:01:11.310
+So the other thing other than
+constants are reserved words.
+
+23
+00:01:11.310 --> 00:01:16.130
+And as I said in a earlier lecture,
+these are like dog language.
+
+24
+00:01:16.130 --> 00:01:17.800
+Blah, blah, blah, blah, class.
+
+25
+00:01:17.800 --> 00:01:19.100
+Blah, blah, blah, del.
+
+26
+00:01:19.100 --> 00:01:20.891
+Blah, blah, blah, else.
+
+27
+00:01:20.891 --> 00:01:23.090
+Blah, blah, blah, lambda.
+
+28
+00:01:23.090 --> 00:01:26.140
+So these are words that when
+you say them to Python,
+
+29
+00:01:26.140 --> 00:01:30.260
+Python expects them to mean exactly
+what Python wants you to mean.
+
+30
+00:01:30.260 --> 00:01:31.170
+Now, why is this special?
+
+31
+00:01:31.170 --> 00:01:34.870
+It's actually kind of instinctive. It just
+means don't use these for other things.
+
+32
+00:01:34.870 --> 00:01:39.620
+Don't name functions, don't name classes,
+don't name variables.
+
+33
+00:01:39.620 --> 00:01:43.320
+Places where you get choices to use words.
+
+34
+00:01:43.320 --> 00:01:46.650
+Don't use these words. And
+most of them aren't too big of a problem.
+
+35
+00:01:46.650 --> 00:01:53.300
+I don't know, maybe break or
+in, or from, maybe.
+
+36
+00:01:53.300 --> 00:01:55.030
+Some of these you might naturally use.
+
+37
+00:01:55.030 --> 00:01:58.637
+Most of them are kind of weird enough that
+you're probably not going to use them
+
+38
+00:01:58.637 --> 00:01:59.619
+as variable names.
+
+39
+00:01:59.619 --> 00:02:03.109
+And so
+the third atom basically is variables.
+
+40
+00:02:04.360 --> 00:02:06.620
+And you get to pick the variable names.
+
+41
+00:02:06.620 --> 00:02:11.890
+And it's a little weird that you
+get to pick variable names, but
+
+42
+00:02:11.890 --> 00:02:13.400
+you'll get used to it.
+
+43
+00:02:13.400 --> 00:02:17.400
+And so variable names are places where
+you're asking Python to allocate
+
+44
+00:02:17.400 --> 00:02:22.480
+a bit of memory and stick something
+in it and you're choosing the label.
+
+45
+00:02:22.480 --> 00:02:26.250
+And so if we take a look at this.
+
+46
+00:02:26.250 --> 00:02:27.978
+When we have this assignment statement,
+
+47
+00:02:27.978 --> 00:02:30.758
+and remember that assignment statements
+always have a direction, right?
+
+48
+00:02:30.758 --> 00:02:33.625
+Think of these equal signs
+as having an arrow on them.
+
+49
+00:02:33.625 --> 00:02:38.248
+In some languages, I saw a language that
+uses kind of an arrow that uses a less
+
+50
+00:02:38.248 --> 00:02:40.357
+than and a dash as the assignment.
+
+51
+00:02:40.357 --> 00:02:42.840
+I went, that's how it should be
+
+52
+00:02:42.840 --> 00:02:44.110
+because equal confuses us.
+
+53
+00:02:44.110 --> 00:02:48.939
+Because equal means something different in
+mathematics than it does in Python
+
+54
+00:02:48.939 --> 00:02:50.920
+or other programming languages.
+
+55
+00:02:53.750 --> 00:02:55.070
+So look at this very first statement.
+
+56
+00:02:55.070 --> 00:02:58.530
+What we're really saying is,
+it's a pretty complex statement.
+
+57
+00:02:58.530 --> 00:03:00.740
+After a while, you'll just use it.
+
+58
+00:03:00.740 --> 00:03:06.147
+Python, find us a spare piece
+of memory somewhere and
+
+59
+00:03:06.147 --> 00:03:10.601
+give it a label of x, and put 12.2 in it.
+
+60
+00:03:10.601 --> 00:03:13.280
+And remember that,
+remember all that stuff.
+
+61
+00:03:13.280 --> 00:03:16.200
+That's one of things that Python does for
+us, it remembers stuff.
+
+62
+00:03:16.200 --> 00:03:17.826
+Then we go to the second statement.
+
+63
+00:03:17.826 --> 00:03:23.753
+It says oh, hey Python, find some spare
+memory that you got laying around,
+
+64
+00:03:23.753 --> 00:03:27.450
+label it y and put 14 into that, okay?
+
+65
+00:03:27.450 --> 00:03:32.390
+And so that's how these things work and
+you chose x and you chose y.
+
+66
+00:03:33.770 --> 00:03:37.169
+Now if we keep on going in this code, and
+
+67
+00:03:37.169 --> 00:03:42.534
+now we have another line and
+we say oh, hey, x, wait a sec.
+
+68
+00:03:42.534 --> 00:03:45.677
+I already told you about x,
+x already exists so don't go out and
+
+69
+00:03:45.677 --> 00:03:47.942
+grab any new memory, but stick 100 in that.
+
+70
+00:03:47.942 --> 00:03:51.480
+So 100 goes in and
+it wipes out the old value.
+
+71
+00:03:51.480 --> 00:03:53.850
+So, that's what happens.
+
+72
+00:03:53.850 --> 00:03:57.380
+When this sequence starts,
+this happens first, second, third.
+
+73
+00:03:57.380 --> 00:03:59.850
+And so
+the third thing is the last thing and
+
+74
+00:03:59.850 --> 00:04:03.800
+so x ends up with a residual
+value of 100 in it.
+
+75
+00:04:03.800 --> 00:04:06.050
+So that's kind of variables and
+assignment statements.
+
+76
+00:04:06.050 --> 00:04:08.470
+You have some naming rules.
+
+77
+00:04:08.470 --> 00:04:12.510
+You can start variable names with letters
+or underscores, although we avoid
+
+78
+00:04:12.510 --> 00:04:17.040
+underscores because Python tends to use
+underscores for its own internal purposes.
+
+79
+00:04:17.040 --> 00:04:20.220
+And the rest of it can be letters,
+numbers, and underscores.
+
+80
+00:04:20.220 --> 00:04:23.930
+And it's case sensitive.
+
+81
+00:04:23.930 --> 00:04:26.900
+But we don't want you to depend on that.
+
+82
+00:04:26.900 --> 00:04:30.850
+So, spam all lowercase,
+Spam with one uppercase, and SPAM.
+
+83
+00:04:30.850 --> 00:04:33.840
+These all are different variable names but
+
+84
+00:04:33.840 --> 00:04:37.390
+you're not doing anybody any favor
+if you think that's being clever.
+
+85
+00:04:37.390 --> 00:04:41.690
+We tend to sometimes use uppercase to
+signal things, which we'll talk about
+
+86
+00:04:41.690 --> 00:04:44.630
+later, but we tend to use mostly lowercase.
+
+87
+00:04:44.630 --> 00:04:48.210
+Some applications use what's
+called camel case, which is a mix.
+
+88
+00:04:48.210 --> 00:04:52.230
+But you tend not to depend on
+the fact that these are unique
+
+89
+00:04:52.230 --> 00:04:56.040
+because you really are misleading
+the person who's reading your code.
+
+90
+00:04:56.040 --> 00:05:00.519
+But we have some good ones, spam,
+eggs, spam 23, numbers are fine.
+
+91
+00:05:00.519 --> 00:05:03.613
+It's fine to start with a underscore.
+
+92
+00:05:03.613 --> 00:05:05.504
+It's bad to start with a number.
+
+93
+00:05:05.504 --> 00:05:09.260
+It is bad to start with a pound sign,
+although that turns into a comment, and
+
+94
+00:05:09.260 --> 00:05:13.410
+you can't use characters other than
+letters and numbers in the variable.
+
+95
+00:05:13.410 --> 00:05:16.350
+And so those are all good variable names.
+
+96
+00:05:18.190 --> 00:05:22.450
+Now we lead these things into 
+sentences or lines.
+
+97
+00:05:22.450 --> 00:05:24.050
+And so these things.
+
+98
+00:05:24.050 --> 00:05:25.966
+This is just another sequence of code, and
+
+99
+00:05:25.966 --> 00:05:28.850
+it shows how you can also use
+the variable on the right-hand side.
+
+100
+00:05:28.850 --> 00:05:32.690
+So put 2 in some memory and label it x.
+
+101
+00:05:32.690 --> 00:05:35.440
+Pull that 2 back out and then add 2 to it.
+
+102
+00:05:35.440 --> 00:05:37.390
+So this little thing here becomes 4.
+
+103
+00:05:37.390 --> 00:05:39.035
+And then stick 4 into x.
+
+104
+00:05:39.353 --> 00:05:41.620
+And then this is a print function.
+
+105
+00:05:41.620 --> 00:05:44.549
+And the way functions work is
+they are the name of a function,
+
+106
+00:05:44.549 --> 00:05:47.940
+followed by a parenthesis,
+followed by another parenthesis.
+
+107
+00:05:47.940 --> 00:05:50.790
+And then you can print something,
+what you want to print.
+
+108
+00:05:50.790 --> 00:05:54.690
+And so, this causes on some 
+output 4 to come out.
+
+109
+00:05:54.690 --> 00:05:59.300
+So, print is the function that
+you call to cause output.
+
+110
+00:06:00.320 --> 00:06:05.281
+Now I emphasize that one of the key
+things about variable names is that you
+
+111
+00:06:05.281 --> 00:06:06.512
+get to name them.
+
+112
+00:06:06.512 --> 00:06:10.980
+And we have a technique called mnemonic.
+I think I pronounced that right.
+
+113
+00:06:10.980 --> 00:06:14.610
+And the idea is that when
+you choose a variable name,
+
+114
+00:06:14.610 --> 00:06:18.830
+you should choose a variable
+name to be sensible and
+
+115
+00:06:18.830 --> 00:06:22.220
+Python doesn't care whether you choose
+mnemonic variable names or not.
+
+116
+00:06:22.220 --> 00:06:23.600
+And the name that you choose for
+
+117
+00:06:23.600 --> 00:06:28.450
+a variable does not communicate any
+additional information to Python, okay?
+
+118
+00:06:28.450 --> 00:06:31.300
+So when you're a beginning student,
+
+119
+00:06:31.300 --> 00:06:35.160
+sometimes if you use variable names
+that are too good it's confusing.
+
+120
+00:06:35.160 --> 00:06:39.230
+So you'll notice as I write, especially in
+these first two chapters, some of my code
+
+121
+00:06:39.230 --> 00:06:42.630
+uses really dumb variable names and
+some of them uses really clever ones.
+
+122
+00:06:42.630 --> 00:06:47.610
+So I go back and forth to emphasize to you
+that the name of the variable as long it's
+
+123
+00:06:47.610 --> 00:06:53.730
+consistent within a program doesn't
+matter, and Python is perfectly happy.
+
+124
+00:06:53.730 --> 00:06:55.940
+So here is a little code.
+
+125
+00:06:55.940 --> 00:06:57.250
+It's four lines of code.
+
+126
+00:06:58.960 --> 00:07:03.797
+And start at the top, run this line and
+that says find a little piece of memory
+
+127
+00:07:03.797 --> 00:07:06.608
+and label it that thing and
+stick 35 in it.
+
+128
+00:07:06.608 --> 00:07:11.190
+Find a little piece of memory and
+label it that thing, stick 12 in it.
+
+129
+00:07:11.190 --> 00:07:13.410
+Pull that first thing out and
+pull the second thing out,
+
+130
+00:07:13.410 --> 00:07:17.000
+multiply them together, and
+put them yet into a third variable.
+
+131
+00:07:17.000 --> 00:07:21.047
+If you look at these things really
+closely, they're all unique and
+
+132
+00:07:21.047 --> 00:07:21.828
+distinct, and
+
+133
+00:07:21.828 --> 00:07:26.232
+you do have to look at them very closely.
+Then you print the third thing out.
+
+134
+00:07:26.232 --> 00:07:28.388
+And Python loves this code.
+
+135
+00:07:28.388 --> 00:07:30.417
+Python thinks great.
+
+136
+00:07:30.417 --> 00:07:33.068
+I don't know why you picked those variables,
+I do not care.
+
+137
+00:07:33.068 --> 00:07:35.071
+All I care is that they're unique.
+
+138
+00:07:35.071 --> 00:07:38.460
+Python really has no opinion
+about these variables.
+
+139
+00:07:38.460 --> 00:07:40.734
+But if you hand this code to a friend and
+then you say,
+
+140
+00:07:40.734 --> 00:07:42.098
+what is this code doing there?
+
+141
+00:07:42.098 --> 00:07:45.147
+They're like, why did you pick
+such insane variables?
+
+142
+00:07:45.147 --> 00:07:49.483
+because I have to stare at it and like,
+the difference between like these
+
+143
+00:07:49.483 --> 00:07:53.250
+two things is just the letter z and
+the letter p.
+
+144
+00:07:53.250 --> 00:07:55.995
+So this one we're pulling
+the p guy out and
+
+145
+00:07:55.995 --> 00:07:59.148
+this time we're pulling the z guy out,
+right?
+
+146
+00:07:59.148 --> 00:08:03.960
+And these two just have a difference
+of those letters, I think.
+
+147
+00:08:03.960 --> 00:08:06.017
+I mean, you could do it.
+
+148
+00:08:06.017 --> 00:08:07.319
+Python loves this stuff.
+
+149
+00:08:07.319 --> 00:08:10.660
+To Python this is perfectly
+understandable code.
+
+150
+00:08:10.660 --> 00:08:15.160
+To human beings it is not
+perfectly understandable code.
+
+151
+00:08:15.160 --> 00:08:19.030
+So like people aren't going to like you,
+but Python is going to be very,
+
+152
+00:08:19.030 --> 00:08:19.560
+very happy.
+
+153
+00:08:19.560 --> 00:08:23.490
+I can't draw a happy snake,
+otherwise I would draw a happy snake.
+
+154
+00:08:23.490 --> 00:08:27.300
+So, this is tacky, bad, not friendly.
+
+155
+00:08:27.300 --> 00:08:29.330
+So, let's make it a little more friendly.
+
+156
+00:08:29.330 --> 00:08:31.000
+You could choose variable names.
+
+157
+00:08:31.000 --> 00:08:35.080
+To those, Python looks at these two
+things as like, those are the same.
+
+158
+00:08:35.080 --> 00:08:37.690
+They're totally the same,
+Python doesn't care.
+
+159
+00:08:38.890 --> 00:08:42.350
+But now we can look at it and go,
+I see. The first variables is a and
+
+160
+00:08:42.350 --> 00:08:44.340
+we're putting that a thing there and
+the second variables is b.
+
+161
+00:08:44.340 --> 00:08:47.248
+We're putting the b thing there. And then we're
+multiplying them and going to put them in a c thing
+
+162
+00:08:47.248 --> 00:08:48.695
+and then we're printing the c thing out.
+
+163
+00:08:48.695 --> 00:08:49.560
+That's pretty nice.
+
+164
+00:08:49.560 --> 00:08:52.139
+So this is a little better, right?
+
+165
+00:08:52.139 --> 00:08:56.620
+At least we can parse it and read it and
+understand what the code is going to do
+
+166
+00:08:56.620 --> 00:09:01.478
+without having to check to see if these
+two characters are the same or different.
+
+167
+00:09:01.478 --> 00:09:04.940
+So that's better but
+it's not mnemonic, okay?
+
+168
+00:09:04.940 --> 00:09:09.840
+Mnemonic means that we choose
+a variable name that makes sense for
+
+169
+00:09:09.840 --> 00:09:10.920
+what we're using it for.
+
+170
+00:09:10.920 --> 00:09:16.780
+Again, the variable name and Python looks
+at all these three things as the same.
+
+171
+00:09:16.780 --> 00:09:20.350
+All Python cares is that this
+matches this, this matches that and
+
+172
+00:09:20.350 --> 00:09:21.770
+that matches this.
+
+173
+00:09:21.770 --> 00:09:25.527
+But, humans are much happier.
+
+174
+00:09:25.527 --> 00:09:27.232
+Humans are much happier.
+
+175
+00:09:27.232 --> 00:09:33.431
+Now, we understand mentally that
+the first variable 35 was the hours.
+
+176
+00:09:33.431 --> 00:09:38.020
+The second was the rate per hours and then
+we computed a pay and we printed it out.
+
+177
+00:09:38.020 --> 00:09:40.349
+So this is really understandable.
+
+178
+00:09:40.349 --> 00:09:46.520
+The problem is for beginning programmers,
+it sometimes is too understandable, right?
+
+179
+00:09:46.520 --> 00:09:48.032
+It's too understandable.
+
+180
+00:09:51.883 --> 00:09:53.999
+Right?
+
+181
+00:09:53.999 --> 00:09:56.430
+Huh? Python knows about payroll?
+
+182
+00:09:56.430 --> 00:09:58.240
+Because if I name a variable hours,
+
+183
+00:09:58.240 --> 00:10:00.950
+shouldn't Python know
+that that means hours?
+
+184
+00:10:00.950 --> 00:10:04.890
+And if I name a variable pay does that
+mean that Python knows about this?
+
+185
+00:10:04.890 --> 00:10:06.820
+And the answer is, no.
+
+186
+00:10:06.820 --> 00:10:09.638
+Python treats all these three as equal.
+
+187
+00:10:09.638 --> 00:10:12.903
+Python doesn't look at the name
+of your variables and think, hey,
+
+188
+00:10:12.903 --> 00:10:14.500
+you just had a bug, right?
+
+189
+00:10:14.500 --> 00:10:20.430
+So what if, for example, I rewrote this
+code and I said hours times hours.
+
+190
+00:10:21.980 --> 00:10:25.230
+And it's like wouldn't Python
+say hey that doesn't make sense.
+
+191
+00:10:25.230 --> 00:10:27.800
+Why would you even multiply it
+in a payroll calculation?
+
+192
+00:10:27.800 --> 00:10:30.090
+Why would you multiply hours times hours?
+
+193
+00:10:30.090 --> 00:10:32.760
+And the answer is, Python
+will happily do it
+
+194
+00:10:32.760 --> 00:10:34.690
+because it's not looking at those words.
+
+195
+00:10:34.690 --> 00:10:38.510
+But a human being who's trying to
+understand what your code is or
+
+196
+00:10:38.510 --> 00:10:41.520
+trying to help you, when you're
+writing code debug your code,
+
+197
+00:10:41.520 --> 00:10:44.110
+will be very thankful that
+you chose good names.
+
+198
+00:10:44.110 --> 00:10:47.590
+And now I can look at your code, and if I
+see you say pay equals hours times hours,
+
+199
+00:10:47.590 --> 00:10:49.720
+like, why did you multiply
+hours times hours?
+
+200
+00:10:49.720 --> 00:10:52.730
+Didn't you really mean to
+multiply hours times rate?
+
+201
+00:10:52.730 --> 00:10:56.490
+So mnemonic variables are only for
+humans.
+
+202
+00:10:56.490 --> 00:11:01.030
+We will later see things that will
+confuse you when I name one variable
+
+203
+00:11:02.560 --> 00:11:06.200
+friend and another one friends.
+
+204
+00:11:08.540 --> 00:11:11.270
+And you'll be like, so
+Python understands plurals?
+
+205
+00:11:11.270 --> 00:11:15.060
+And the answer is no, Python
+doesn't understand plurals, okay.
+
+206
+00:11:15.060 --> 00:11:19.530
+It's really helpful to read stuff, so that
+when something has more than one thing in
+
+207
+00:11:19.530 --> 00:11:22.160
+it, you might maybe use a variable
+that's got a plural in it.
+
+208
+00:11:22.160 --> 00:11:25.400
+So, okay, enough about that.
+
+209
+00:11:25.400 --> 00:11:27.239
+I hope I made my point.
+
+210
+00:11:27.239 --> 00:11:29.989
+These are all the same to Python, but
+
+211
+00:11:29.989 --> 00:11:34.720
+human beings certainly prefer
+the second or the third.
+
+212
+00:11:34.720 --> 00:11:36.440
+And so, but be careful.
+
+213
+00:11:36.440 --> 00:11:39.359
+And after Chapter 10,
+you'll start using mnemonic variables and
+
+214
+00:11:39.359 --> 00:11:40.428
+it won't be a problem.
+
+215
+00:11:40.428 --> 00:11:44.107
+But in the first few chapters,
+you have to worry about it.
+
+216
+00:11:44.107 --> 00:11:49.100
+So as I mentioned, assignment statements
+basically are not like mathematics.
+
+217
+00:11:49.100 --> 00:11:51.300
+Equal sign means equality.
+
+218
+00:11:51.300 --> 00:11:52.760
+Assignment statements means arrow.
+
+219
+00:11:52.760 --> 00:11:56.863
+And the key thing is you can almost think
+of this as like there's a little wall
+
+220
+00:11:56.863 --> 00:11:59.746
+there and it completely 
+computes this expression.
+
+221
+00:11:59.746 --> 00:12:03.208
+This is an expression,
+on the right-hand side,
+
+222
+00:12:03.208 --> 00:12:09.330
+gets that down to a single variable and
+then writes it into the memory location.
+
+223
+00:12:09.330 --> 00:12:13.930
+And that's why it's possible to have
+the same variable on both sides
+
+224
+00:12:13.930 --> 00:12:17.190
+because this side happens first,
+ignoring this side.
+
+225
+00:12:17.190 --> 00:12:23.240
+And then once this side is done, then it
+actually puts it into that other side.
+
+226
+00:12:23.240 --> 00:12:30.109
+And so, if, for example, x before
+the statement started, had a 0.6 in it.
+
+227
+00:12:30.109 --> 00:12:32.709
+It like firewalls this part off, and
+
+228
+00:12:32.709 --> 00:12:37.144
+it computes this part here by
+pulling the 0.6, the old value of x,
+
+229
+00:12:37.144 --> 00:12:42.600
+doing the computation, running through
+the things, getting the new value.
+
+230
+00:12:42.600 --> 00:12:47.855
+And then after it's got that new value,
+then, and only then,
+
+231
+00:12:47.855 --> 00:12:55.013
+does it store the 0.936 into x and that
+overwrites the 0.6 that was in x, okay?
+
+232
+00:12:55.013 --> 00:13:00.970
+And so one side finishes, produces
+a result, and then it can overwrite.
+
+233
+00:13:00.970 --> 00:13:03.790
+It doesn't mean you have to put
+the variable on both sides.
+
+234
+00:13:03.790 --> 00:13:05.320
+But it's why you can put it.
+
+235
+00:13:05.320 --> 00:13:08.586
+So sometimes we'll say
+something like x = x + 1.
+
+236
+00:13:08.586 --> 00:13:10.925
+And that's our way of adding 1 to x.
+
+237
+00:13:10.925 --> 00:13:15.990
+And that's because whatever x is, maybe
+x is 6 or something, this becomes a 7.
+
+238
+00:13:15.990 --> 00:13:19.410
+And then the 7 goes into x and
+then it overwrites it to the 7.
+
+239
+00:13:19.410 --> 00:13:20.974
+We call this increment.
+
+240
+00:13:20.974 --> 00:13:25.123
+We'll see this soon, okay?
+
+241
+00:13:25.123 --> 00:13:26.625
+But that's why you can put the same thing.
+
+242
+00:13:26.625 --> 00:13:30.810
+Now in mathematics, x = x + 1
+makes absolutely no sense one but
+
+243
+00:13:30.810 --> 00:13:34.929
+in programming, it is one of
+the more common things that we do.
+
+244
+00:13:34.929 --> 00:13:37.989
+Okay, so that gets us through variables and
+constants and
+
+245
+00:13:37.989 --> 00:13:41.780
+now we're going to talk a little bit
+more in detail about expressions.

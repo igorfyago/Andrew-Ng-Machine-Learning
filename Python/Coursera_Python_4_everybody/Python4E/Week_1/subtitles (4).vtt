@@ -1,0 +1,542 @@
+WEBVTT
+
+1
+00:00:09.434 --> 00:00:14.297
+[SOUND] So now we're going to talk
+about Python as a programming language.
+
+2
+00:00:14.297 --> 00:00:16.580
+You probably noticed that
+I'm wearing a sorting hat.
+
+3
+00:00:16.580 --> 00:00:22.610
+The reason I'm wearing a sorting hat
+is that where I work at the University
+
+4
+00:00:22.610 --> 00:00:26.710
+of Michigan School of Information, we
+are in a building called the North Quad.
+
+5
+00:00:26.710 --> 00:00:29.913
+And you can look it up on Google and
+find a picture of it if you like.
+
+6
+00:00:29.913 --> 00:00:34.990
+And I think it's designed
+to be like Hogwarts.
+
+7
+00:00:34.990 --> 00:00:41.130
+It's got a little center,
+it's got this outside bit,
+
+8
+00:00:41.130 --> 00:00:46.040
+it's got a really cool cafeteria that
+looks like owls might fly through it.
+
+9
+00:00:46.040 --> 00:00:49.700
+And so we moved to this a few years
+back when I started teaching Python.
+
+10
+00:00:49.700 --> 00:00:53.054
+And I was teaching my very,
+very first class in this building,
+
+11
+00:00:53.054 --> 00:00:57.235
+which we've sort of lovingly called
+Quadwarts, because it's North Quad and
+
+12
+00:00:57.235 --> 00:00:59.407
+we thought it was kind of like Hogwarts.
+
+13
+00:00:59.407 --> 00:01:04.548
+And so, I'm joking, and
+I wore my robes to class, and
+
+14
+00:01:04.548 --> 00:01:09.928
+I said welcome to Quadwarts,
+and you have to wear your
+
+15
+00:01:09.928 --> 00:01:14.969
+robes every time to class,
+and I was being funny.
+
+16
+00:01:14.969 --> 00:01:19.438
+And I said okay, it's our first class,
+we're teaching Python, and
+
+17
+00:01:19.438 --> 00:01:21.620
+let's do a sorting ceremony.
+
+18
+00:01:21.620 --> 00:01:24.030
+I didn't have the sorting hat back then,
+so I have a sorting hat now.
+
+19
+00:01:25.100 --> 00:01:26.080
+And so, that's cool.
+
+20
+00:01:26.080 --> 00:01:30.190
+And I'm like,
+I think I'm going to be in Gryffindor.
+
+21
+00:01:30.190 --> 00:01:33.370
+And they told me, the students said
+that I couldn't be in Gryffindor.
+
+22
+00:01:34.410 --> 00:01:37.410
+And I'm like,
+why can't I be in Gryffindor?
+
+23
+00:01:37.410 --> 00:01:39.320
+Everybody wants to be in Gryffindor.
+
+24
+00:01:39.320 --> 00:01:41.800
+And they told me that
+I was teaching Python.
+
+25
+00:01:42.900 --> 00:01:47.880
+Python is like a programming
+language that's based on a snake.
+
+26
+00:01:47.880 --> 00:01:54.430
+And even worse, my name's Charles
+Severance, and I'm like Severus Snape.
+
+27
+00:01:54.430 --> 00:01:58.300
+And so they basically told me
+that I had to be in Slytherin.
+
+28
+00:01:58.300 --> 00:02:03.220
+And so since then, I've bought many
+Slytherin items, I got Slytherin wands,
+
+29
+00:02:03.220 --> 00:02:05.758
+when I graduate,
+you'll see my Slytherin wand.
+
+30
+00:02:05.758 --> 00:02:09.400
+I got a sorting hat, so you'll see me
+drinking tea throughout the class,
+
+31
+00:02:11.930 --> 00:02:15.630
+from my Slytherin cup and so I guess
+I'm just doomed to be in Slytherin.
+
+32
+00:02:15.630 --> 00:02:19.000
+I don't know if that means I'm a good guy
+or a bad guy, or a good guy that seems
+
+33
+00:02:19.000 --> 00:02:23.020
+like a bad guy or bad guy that turns
+out to be a, right, it's a lot of book.
+
+34
+00:02:23.020 --> 00:02:28.150
+So, the whole thing about being in
+Slytherin is that you can talk to snakes
+
+35
+00:02:28.150 --> 00:02:31.840
+because you can talk this weird
+language that others don't understand.
+
+36
+00:02:33.750 --> 00:02:34.530
+Python's like that.
+
+37
+00:02:35.630 --> 00:02:38.590
+Python's a language that
+most don't understand.
+
+38
+00:02:38.590 --> 00:02:42.070
+You, of course,
+will begin to understand it.
+
+39
+00:02:43.220 --> 00:02:47.610
+It's a weird language, it's strange,
+it's not easily understood by others.
+
+40
+00:02:47.610 --> 00:02:50.200
+We call ourselves Pythonistas.
+
+41
+00:02:50.200 --> 00:02:55.340
+And Guido van Rossum, over 20 years ago,
+invented this Python language
+
+42
+00:02:55.340 --> 00:02:59.290
+that we have grown to know and
+love, and has become so important.
+
+43
+00:03:00.400 --> 00:03:03.210
+And while I'm going through
+all this like snake stuff,
+
+44
+00:03:03.210 --> 00:03:06.840
+it turns out that that is not at
+all why Python was named Python.
+
+45
+00:03:06.840 --> 00:03:08.150
+Python was not named for
+
+46
+00:03:08.150 --> 00:03:12.910
+a snake even though we use
+the snake motif all the time.
+
+47
+00:03:12.910 --> 00:03:18.270
+It turns out that what Python was named
+for was Monty Python's Flying Circus.
+
+48
+00:03:18.270 --> 00:03:23.930
+And the reason was is that Guido was
+trying to capture an air of play.
+
+49
+00:03:23.930 --> 00:03:27.100
+Most programming languages in the 80s
+when Python started were very,
+
+50
+00:03:27.100 --> 00:03:31.870
+very serious, and very complex and you had
+to be really serious to figure them out,
+
+51
+00:03:31.870 --> 00:03:33.194
+a lot of math geniuses.
+
+52
+00:03:33.194 --> 00:03:38.300
+And Guido thought, I could probably
+write a programming language that
+
+53
+00:03:38.300 --> 00:03:40.390
+wouldn't be that hard,
+would be fun actually,
+
+54
+00:03:40.390 --> 00:03:44.180
+would be enjoyable to use, but
+let's not make it bad.
+
+55
+00:03:44.180 --> 00:03:48.660
+Let's not make it weak,
+let's make it both powerful and enjoyable.
+
+56
+00:03:48.660 --> 00:03:52.350
+And so that's why Python turns
+out to be such a perfect language
+
+57
+00:03:52.350 --> 00:03:55.950
+to use as your first programming language,
+is that it's designed
+
+58
+00:03:55.950 --> 00:03:59.330
+to be your first programming language but
+it's also powerful.
+
+59
+00:03:59.330 --> 00:04:02.335
+So many times you build a first
+programming language that's weak.
+
+60
+00:04:02.335 --> 00:04:04.275
+And not capable of doing a lot of stuff.
+
+61
+00:04:04.275 --> 00:04:09.980
+But Python has this wonderful,
+easy to learn and powerful and useful.
+
+62
+00:04:09.980 --> 00:04:11.910
+And so there we are.
+
+63
+00:04:11.910 --> 00:04:14.613
+Welcome to being a Pythonista.
+
+64
+00:04:14.613 --> 00:04:20.026
+Now. As you learn Python, remember,
+
+65
+00:04:20.026 --> 00:04:25.710
+you're talking to a snake and this is
+a language that you don't already know.
+
+66
+00:04:25.710 --> 00:04:27.840
+You are going to make lots of mistakes.
+
+67
+00:04:28.920 --> 00:04:34.200
+And the computer is going to seem
+to judge your mistakes harshly.
+
+68
+00:04:34.200 --> 00:04:36.810
+You will learn the word
+"syntax error" a lot.
+
+69
+00:04:37.910 --> 00:04:43.080
+And, if you're like me, I think back to
+the first time that I was programming.
+
+70
+00:04:43.080 --> 00:04:46.610
+I was typing stuff on cards, and
+you'd bring your card deck up and
+
+71
+00:04:46.610 --> 00:04:47.740
+you'd hand it to the computer.
+
+72
+00:04:47.740 --> 00:04:49.480
+And you'd read it through the computer.
+
+73
+00:04:49.480 --> 00:04:51.500
+And then the computer would come back and
+say syntax error.
+
+74
+00:04:51.500 --> 00:04:56.960
+And sometimes it took several hours to
+get back the results of your program.
+
+75
+00:04:56.960 --> 00:05:01.151
+You're going to get to do it in seconds,
+but in the old days when I was young,
+
+76
+00:05:01.151 --> 00:05:02.513
+it took hours sometimes.
+
+77
+00:05:02.513 --> 00:05:05.199
+And then all you get back
+is a syntax error and
+
+78
+00:05:05.199 --> 00:05:10.060
+when I first started programming, I grew
+to kind of hate the creature that lived
+
+79
+00:05:10.060 --> 00:05:14.470
+inside the computer because I
+thought that the creature didn't like me.
+
+80
+00:05:14.470 --> 00:05:18.370
+I thought the creature was
+value judging my programs.
+
+81
+00:05:18.370 --> 00:05:21.528
+I mean, I would write this thing and I
+think it's perfect and I would hand it in.
+
+82
+00:05:21.528 --> 00:05:23.637
+And the computer would say, syntax error.
+
+83
+00:05:23.637 --> 00:05:24.920
+And I'm like, huh?
+
+84
+00:05:24.920 --> 00:05:26.540
+What's up, syntax error.
+
+85
+00:05:26.540 --> 00:05:30.820
+And then I would like, okay, I'll make
+my program better and here you go.
+
+86
+00:05:30.820 --> 00:05:33.160
+And it would say syntax error again.
+
+87
+00:05:33.160 --> 00:05:36.175
+And the thing that you're going
+to have to learn is that,
+
+88
+00:05:38.227 --> 00:05:42.230
+syntax error doesn't mean that
+Python thinks you're bad.
+
+89
+00:05:42.230 --> 00:05:44.330
+It is not a judgement of your
+ability as a programmer,
+
+90
+00:05:44.330 --> 00:05:47.640
+it is not a judgement of your
+potential to be a programmer.
+
+91
+00:05:47.640 --> 00:05:50.330
+Syntax error means Python is lost.
+
+92
+00:05:51.780 --> 00:05:56.660
+You are learning Python's language
+because Python can't learn your language.
+
+93
+00:05:56.660 --> 00:05:58.160
+You're smarter than Python.
+
+94
+00:05:58.160 --> 00:05:59.470
+We can teach you.
+
+95
+00:05:59.470 --> 00:06:02.255
+You can learn, but Python can't.
+
+96
+00:06:02.255 --> 00:06:07.158
+And so when it says syntax error, even
+though you feel like it's a rejection,
+
+97
+00:06:07.158 --> 00:06:10.750
+syntax error simply means
+that Python is lost.
+
+98
+00:06:10.750 --> 00:06:15.220
+It just doesn't have really friendly
+words when it says it's lost,
+
+99
+00:06:15.220 --> 00:06:19.950
+it just goes syntax error, which
+literally is exactly what's happening.
+
+100
+00:06:19.950 --> 00:06:24.592
+Your syntax is not something
+that Python understands.
+
+101
+00:06:24.592 --> 00:06:29.347
+So just understand as you go through
+the next couple of weeks that you will be
+
+102
+00:06:29.347 --> 00:06:30.260
+frustrated.
+
+103
+00:06:31.460 --> 00:06:32.880
+It's not because you're a bad person,
+
+104
+00:06:32.880 --> 00:06:34.400
+it's not because you're never
+going to figure it out.
+
+105
+00:06:34.400 --> 00:06:37.520
+You will figure it out and
+you will get it.
+
+106
+00:06:37.520 --> 00:06:41.160
+And you have to sort of trust us as
+we go through the first few weeks and
+
+107
+00:06:41.160 --> 00:06:42.180
+learn the basics.
+
+108
+00:06:42.180 --> 00:06:44.080
+And then as we connect
+the basics together,
+
+109
+00:06:45.130 --> 00:06:47.300
+then this thing will
+make a lot more sense.
+
+110
+00:06:47.300 --> 00:06:52.000
+I remember when I was first learning to
+program, I would be like, lost, lost,
+
+111
+00:06:52.000 --> 00:06:54.680
+lost, lost, lost, oh wow, I love this.
+
+112
+00:06:54.680 --> 00:06:59.020
+And I expect that many of you will go
+through that exact same feeling so
+
+113
+00:06:59.020 --> 00:06:59.840
+you have to trust us.
+
+114
+00:07:01.440 --> 00:07:05.080
+So up next, we're going to actually talk
+about the Python programming language.
