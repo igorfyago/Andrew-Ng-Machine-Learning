@@ -1,0 +1,325 @@
+WEBVTT
+
+1
+00:00:00.311 --> 00:00:10.311
+[MUSIC]
+
+2
+00:00:23.348 --> 00:00:26.947
+When I'm writing an operating system,
+I'm saying, oh here's this problem
+
+3
+00:00:26.947 --> 00:00:30.660
+I've gotta solve, and here's these
+specifications in performance.
+
+4
+00:00:30.660 --> 00:00:32.030
+I'm thinking like a computer scientist.
+
+5
+00:00:32.030 --> 00:00:34.230
+But when I'm writing a Python program,
+
+6
+00:00:34.230 --> 00:00:37.970
+it's like looking through a mailing list
+for certain kind of mail messages, and
+
+7
+00:00:37.970 --> 00:00:40.760
+then matching those mailing
+message up with something else.
+
+8
+00:00:40.760 --> 00:00:43.980
+Or it's seeing who the most
+prolific poster in your forum is.
+
+9
+00:00:45.090 --> 00:00:48.180
+What you are really doing is,
+you are slowly but
+
+10
+00:00:48.180 --> 00:00:51.300
+surely putting yourself into that program.
+
+11
+00:00:51.300 --> 00:00:55.620
+We're in Milan, Italy with one of
+the largest office hours ever.
+
+12
+00:00:55.620 --> 00:00:58.310
+And I'd like to do our
+standard introduction so
+
+13
+00:00:58.310 --> 00:01:02.300
+that you can see everybody.
+
+14
+00:01:02.300 --> 00:01:03.710
+So give us your name and say hi,
+or say something about the course.
+
+15
+00:01:03.710 --> 00:01:07.814
+>> [CROSSTALK] Hi, Malcolm,
+I just really like the course.
+
+16
+00:01:07.814 --> 00:01:09.182
+I don't have anything to say.
+
+17
+00:01:09.182 --> 00:01:09.897
+>> Okay.
+
+18
+00:01:09.897 --> 00:01:14.156
+>> I am Luca, and I am here for
+
+19
+00:01:14.156 --> 00:01:18.045
+[INAUDIBLE] sometimes.
+
+20
+00:01:18.045 --> 00:01:18.972
+>> Okay.
+
+21
+00:01:18.972 --> 00:01:19.995
+>> Hi, I'm Evar.
+
+22
+00:01:19.995 --> 00:01:25.730
+I like the teacher and
+I really love the course.
+
+23
+00:01:25.730 --> 00:01:26.630
+>> Great, thank you.
+
+24
+00:01:26.630 --> 00:01:30.690
+>> Hi, I'm Sebastian, and
+I attended the Internet History course.
+
+25
+00:01:30.690 --> 00:01:31.830
+>> Great.
+
+26
+00:01:31.830 --> 00:01:35.875
+>> Hi, this is Anarita, learning Python
+and getting excited about the course.
+
+27
+00:01:35.875 --> 00:01:36.825
+>> Yeah.
+
+28
+00:01:36.825 --> 00:01:39.684
+>> Ciao, I'm Barbara,
+and I like your course.
+
+29
+00:01:39.684 --> 00:01:40.907
+Thank you, Dr. Chuck.
+
+30
+00:01:40.907 --> 00:01:41.833
+>> Thank you, Barbara.
+
+31
+00:01:41.833 --> 00:01:43.603
+>> [LAUGH]
+>> Hi, I'm Alberto.
+
+32
+00:01:43.603 --> 00:01:45.275
+I just want to learn programming.
+
+33
+00:01:45.275 --> 00:01:45.948
+>> Okay.
+
+34
+00:01:45.948 --> 00:01:48.246
+>> Hi, I'm Andrea,
+I took Internet History.
+
+35
+00:01:48.246 --> 00:01:51.361
+And when I read that Dr. Chuck was coming,
+I started screaming, oh, Dr.
+
+36
+00:01:51.361 --> 00:01:52.751
+Chuck is coming, in the office.
+
+37
+00:01:52.751 --> 00:01:56.652
+>> [LAUGH]
+>> No one understood, but anyway.
+
+38
+00:01:56.652 --> 00:01:57.306
+>> Okay.
+>> Hi,
+
+39
+00:01:57.306 --> 00:02:00.075
+I'm David,
+it's my first course on Coursera.
+
+40
+00:02:00.075 --> 00:02:02.788
+And I wish everybody good luck,
+and stay focused on your goals.
+
+41
+00:02:02.788 --> 00:02:08.445
+>> And now we meet the famous
+community teaching assistant Mauro.
+
+42
+00:02:08.445 --> 00:02:10.261
+Yay!
+>> [APPLAUSE]
+
+43
+00:02:10.261 --> 00:02:12.567
+>> Yeah!
+
+44
+00:02:12.567 --> 00:02:16.210
+So Mauro, say hi,
+whatever you want to say.
+
+45
+00:02:16.210 --> 00:02:20.476
+>> Oh, and yes,
+we finally succeed in bringing Dr.
+
+46
+00:02:20.476 --> 00:02:24.450
+Chuck here in Italy and
+we have a very big, oh!
+
+47
+00:02:24.450 --> 00:02:27.761
+>> [LAUGH]
+>> [CROSSTALK] We have a very big group
+
+48
+00:02:27.761 --> 00:02:28.860
+[INAUDIBLE].
+
+49
+00:02:28.860 --> 00:02:32.995
+>> So after that brief interruption
+by the construction crew,
+
+50
+00:02:32.995 --> 00:02:39.590
+we'll go back to talking to Mauro,
+our intrepid community teaching assistant.
+
+51
+00:02:39.590 --> 00:02:40.710
+>> I am out here.
+
+52
+00:02:40.710 --> 00:02:44.712
+Finally, we succeed in bringing Dr.
+Chuck in Italy.
+
+53
+00:02:44.712 --> 00:02:47.900
+Very successful Office Hour here.
+
+54
+00:02:47.900 --> 00:02:52.893
+A lot of people are both from Programming
+for Everybody and Internet History.
+
+55
+00:02:52.893 --> 00:02:57.620
+I am very happy,
+very happy about our people.
+
+56
+00:02:57.620 --> 00:02:58.210
+Thank you.
+
+57
+00:02:58.210 --> 00:03:00.190
+>> Okay, so we missed one person.
+
+58
+00:03:00.190 --> 00:03:00.950
+Do you want to say hi?
+
+59
+00:03:00.950 --> 00:03:03.219
+>> [INAUDIBLE] Hi, my name is Zura and
+
+60
+00:03:03.219 --> 00:03:04.630
+I am-
+>> She is my wife.
+
+61
+00:03:04.630 --> 00:03:06.084
+[CROSSTALK] She didn't take any courses.
+
+62
+00:03:06.084 --> 00:03:07.910
+>> You didn't take any courses, okay.
+
+63
+00:03:07.910 --> 00:03:09.380
+But you will.
+>> I will, yes.
+
+64
+00:03:09.380 --> 00:03:09.914
+>> Of course you will.
+
+65
+00:03:09.914 --> 00:03:11.724
+>> [LAUGH]
+>> You have to.
+
+66
+00:03:11.724 --> 00:03:13.560
+Okay so, let's see.
+
+67
+00:03:13.560 --> 00:03:15.990
+Now, let me get a nice group picture.
+
+68
+00:03:15.990 --> 00:03:20.670
+And let's give Mauro a nice round
+of applause, thanking him for
+
+69
+00:03:20.670 --> 00:03:23.315
+how awesome he is for doing what he does.
+
+70
+00:03:23.315 --> 00:03:24.857
+>> Thank you, Mauro!
+
+71
+00:03:24.857 --> 00:03:30.244
+>> [APPLAUSE]
+
+72
+00:03:30.244 --> 00:03:40.244
+>> [MUSIC]

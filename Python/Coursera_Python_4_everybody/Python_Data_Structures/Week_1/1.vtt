@@ -1,0 +1,179 @@
+WEBVTT
+
+1
+00:00:00.750 --> 00:00:04.020
+Hello and welcome to my class
+on Python data structures.
+
+2
+00:00:04.020 --> 00:00:07.630
+This is the second class in
+our Python specialization.
+
+3
+00:00:07.630 --> 00:00:12.095
+It covers chapters six
+through ten of the textbook.
+
+4
+00:00:12.095 --> 00:00:15.460
+The previous class covered
+chapters one through five.
+
+5
+00:00:15.460 --> 00:00:18.820
+This is the last class in
+the specialization that you can
+
+6
+00:00:18.820 --> 00:00:21.050
+avoid installing Python.
+
+7
+00:00:21.050 --> 00:00:23.270
+All along we've encouraged
+you to install Python.
+
+8
+00:00:23.270 --> 00:00:26.540
+Do all your homework on your
+desktop or laptop,
+
+9
+00:00:26.540 --> 00:00:28.810
+and then use our autograder
+to turn things in.
+
+10
+00:00:28.810 --> 00:00:31.580
+But starting with the next class,
+not this class, but
+
+11
+00:00:31.580 --> 00:00:34.240
+starting with the next class you're
+going to have to install Python.
+
+12
+00:00:34.240 --> 00:00:36.580
+Because the programs get more complex.
+
+13
+00:00:36.580 --> 00:00:40.220
+We're using advanced Python features
+that I can't simulate in a browser.
+
+14
+00:00:40.220 --> 00:00:43.890
+And so, I would say this is the time
+to go ahead and install Python.
+
+15
+00:00:43.890 --> 00:00:46.950
+Especially if you want to go on
+beyond chapter ten in the book.
+
+16
+00:00:48.010 --> 00:00:53.310
+So, if you are jumping into this class
+and you find yourself struggling,
+
+17
+00:00:53.310 --> 00:00:56.410
+like whoa, I'm picking this
+up in the middle, go back and
+
+18
+00:00:56.410 --> 00:00:57.990
+take the previous class.
+
+19
+00:00:57.990 --> 00:01:01.480
+We just assume that you have
+mastered the previous class.
+
+20
+00:01:01.480 --> 00:01:05.630
+One of my whole goals in
+design of this class, is for
+
+21
+00:01:05.630 --> 00:01:08.990
+you not to try to rush through it,
+but to feel a mastery of it.
+
+22
+00:01:08.990 --> 00:01:12.590
+And feel free to do the same problem
+over and over and over again,
+
+23
+00:01:12.590 --> 00:01:16.440
+and hide the solution from yourself,
+until you realize, oh wait a sec.
+
+24
+00:01:16.440 --> 00:01:19.360
+This is easy. Because frankly,
+up to this point and
+
+25
+00:01:19.360 --> 00:01:22.355
+going forward,
+none of this should be very difficult.
+
+26
+00:01:22.355 --> 00:01:25.890
+And you should really understand
+every single thing that's going on in
+
+27
+00:01:25.890 --> 00:01:26.880
+every one of the assignments.
+
+28
+00:01:26.880 --> 00:01:29.432
+Especially in the first
+ten chapters of the book.
+
+29
+00:01:29.432 --> 00:01:33.330
+Later the programs become a little more
+complex and even by the end of the book,
+
+30
+00:01:33.330 --> 00:01:34.640
+in chapter 14 and 15.
+
+31
+00:01:35.840 --> 00:01:38.410
+It takes me hours to
+write these applications.
+
+32
+00:01:38.410 --> 00:01:42.320
+And so, but here in chapters one
+through ten, it doesn't take me hours.
+
+33
+00:01:42.320 --> 00:01:45.570
+It should take me, you know, five to
+ten minutes at the most.
+
+34
+00:01:45.570 --> 00:01:48.620
+And it eventually should take you
+five to ten minutes at the most.
+
+35
+00:01:48.620 --> 00:01:50.180
+So, welcome to the class.
+
+36
+00:01:50.180 --> 00:01:54.220
+I look forward to seeing you and
+congratulations on getting this far
+
+37
+00:01:54.220 --> 00:01:55.210
+if you made it through the first class

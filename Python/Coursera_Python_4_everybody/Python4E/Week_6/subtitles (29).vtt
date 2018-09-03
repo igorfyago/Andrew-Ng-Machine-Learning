@@ -1,0 +1,652 @@
+WEBVTT
+
+1
+00:00:00.190 --> 00:00:10.190
+[MUSIC]
+
+2
+00:00:13.471 --> 00:00:18.508
+I worked at this place, CWI, and
+for my then current project,
+
+3
+00:00:18.508 --> 00:00:25.174
+which was the Amoeba operating system,
+which I was working under Sape Mullender.
+
+4
+00:00:25.174 --> 00:00:29.952
+One of our projects was to
+write application-level
+
+5
+00:00:29.952 --> 00:00:35.470
+utilities for
+this new Amoeba operating system.
+
+6
+00:00:35.470 --> 00:00:38.440
+And so, there was an operating system kernel
+
+7
+00:00:38.440 --> 00:00:41.750
+and it was very good at
+talking to the network.
+
+8
+00:00:41.750 --> 00:00:47.950
+And it was very good at managing processes.
+But there wasn't much user-level software.
+
+9
+00:00:47.950 --> 00:00:53.140
+There was barely a shell,
+I think there was a ported, very old
+
+10
+00:00:53.140 --> 00:00:58.270
+Unix shell something like the original
+Unix version six shell, but
+
+11
+00:00:58.270 --> 00:01:03.770
+because the file system model
+on Amoeba was so very different
+
+12
+00:01:03.770 --> 00:01:08.680
+we couldn't take an existing
+suite of Unix utilities.
+
+13
+00:01:09.700 --> 00:01:12.250
+And so we wanted it to be self-hosting.
+
+14
+00:01:13.650 --> 00:01:18.530
+And in order to that we realized we need
+a large amount of user-level sort of
+
+15
+00:01:18.530 --> 00:01:23.110
+applications, utilities, tools,
+whatever you call it, from
+
+16
+00:01:23.110 --> 00:01:29.010
+an editor to a mail program to
+a login utility and a backup tool.
+
+17
+00:01:29.010 --> 00:01:34.200
+And one of the things I realized,
+as we had a small team of people sort of
+
+18
+00:01:34.200 --> 00:01:39.440
+working on those things, that it was very
+slow going writing all that stuff in C,
+
+19
+00:01:39.440 --> 00:01:45.150
+and it wasn't particularly interesting or
+sort of novel or
+
+20
+00:01:45.150 --> 00:01:50.350
+difficult and often we also didn't
+really care how fast the code ran.
+
+21
+00:01:50.350 --> 00:01:53.710
+All the reasons why you would
+write a piece of software in C
+
+22
+00:01:53.710 --> 00:01:55.250
+didn't really apply.
+
+23
+00:01:55.250 --> 00:01:59.390
+The only reason left was that C
+was the only language that for
+
+24
+00:01:59.390 --> 00:02:00.598
+which we had a compiler.
+
+25
+00:02:00.598 --> 00:02:06.370
+There was this ABC language that I had
+in the back of my mind that would be
+
+26
+00:02:06.370 --> 00:02:13.930
+a much better language to write a whole
+bunch of utility application tools for
+
+27
+00:02:13.930 --> 00:02:21.120
+Amoeba, except that ABC was so
+high and abstract that it really.
+
+28
+00:02:22.430 --> 00:02:27.390
+It wasn't a good language
+to talk to servers and
+
+29
+00:02:27.390 --> 00:02:31.580
+file systems and
+processes and it's sort of,
+
+30
+00:02:31.580 --> 00:02:37.580
+the whole operating system thing
+was abstracted away from ABC.
+
+31
+00:02:37.580 --> 00:02:41.330
+It was almost something
+like it, I don't know.
+
+32
+00:02:41.330 --> 00:02:46.850
+In an alternate universe ABC could have
+become the language of spreadsheets.
+
+33
+00:02:46.850 --> 00:02:52.860
+It was very good for
+talking about a user's data.
+
+34
+00:02:52.860 --> 00:02:57.570
+And doing all sorts of clever stuff with
+that data. And it did that using very,
+
+35
+00:02:57.570 --> 00:03:02.430
+sort of general all-purpose
+data structures like lists and
+
+36
+00:03:02.430 --> 00:03:07.180
+dictionaries and
+of course it had very nice code
+
+37
+00:03:07.180 --> 00:03:12.040
+structuring devices like a small
+number of simple statements
+
+38
+00:03:12.040 --> 00:03:17.570
+that could be combined in any way you
+wanted to create other constructs.
+
+39
+00:03:17.570 --> 00:03:22.230
+The usual function and
+procedure abstractions.
+
+40
+00:03:22.230 --> 00:03:26.320
+It was not at all an object oriented
+language although the implementation had
+
+41
+00:03:26.320 --> 00:03:30.110
+some objects sort of shining through.
+
+42
+00:03:30.110 --> 00:03:38.060
+Anyway ABC as it existed
+still wasn't usable but
+
+43
+00:03:38.060 --> 00:03:45.570
+I somehow, since I had worked on the ABC
+project, I knew exactly how it was built.
+
+44
+00:03:45.570 --> 00:03:50.690
+And I had this idea in my head that,
+given how much
+
+45
+00:03:50.690 --> 00:03:56.360
+time we had available for our project, I
+could actually build a whole new language,
+
+46
+00:03:56.360 --> 00:03:59.190
+design and implement it from scratch,
+
+47
+00:03:59.190 --> 00:04:05.010
+given what I learned about both the design
+and the implementation of ABC, and
+
+48
+00:04:05.010 --> 00:04:09.240
+start using it to implement
+our suite of tools and
+
+49
+00:04:09.240 --> 00:04:13.990
+still be ahead of the game compared to
+a situation where we would just have sort of
+
+50
+00:04:15.240 --> 00:04:19.840
+clunked on writing the things
+we wanted to write in C.
+
+51
+00:04:20.980 --> 00:04:26.950
+For three months, I did my day job and
+
+52
+00:04:26.950 --> 00:04:32.310
+at night and whenever I got
+a chance I kept working on Python.
+
+53
+00:04:32.310 --> 00:04:36.490
+I believe that within three months I was
+to the point where I could tell people,
+
+54
+00:04:36.490 --> 00:04:37.220
+look here.
+
+55
+00:04:37.220 --> 00:04:38.029
+This is what I built.
+
+56
+00:04:39.060 --> 00:04:43.620
+And it had an interactive
+interpreter loop.
+
+57
+00:04:43.620 --> 00:04:45.830
+So the first demos were all
+
+58
+00:04:46.960 --> 00:04:50.380
+let's assign an expression to
+a variable and print it back.
+
+59
+00:04:52.690 --> 00:04:56.570
+And let's define a small function and
+call it.
+
+60
+00:04:56.570 --> 00:05:00.279
+And let's put some things in an array and
+iterate over the array.
+
+61
+00:05:01.510 --> 00:05:02.770
+And all those things worked.
+
+62
+00:05:05.100 --> 00:05:09.280
+And somehow, and
+
+63
+00:05:09.280 --> 00:05:15.570
+I don't exactly know sort
+of how fast this happened,
+
+64
+00:05:15.570 --> 00:05:19.280
+but certainly my two office mates were
+
+65
+00:05:19.280 --> 00:05:23.409
+almost instantly taken with it and
+started helping out.
+
+66
+00:05:24.740 --> 00:05:28.860
+And they and
+a few others within the institute
+
+67
+00:05:28.860 --> 00:05:33.140
+were very excited about
+this thing that I'd built.
+
+68
+00:05:33.140 --> 00:05:34.340
+And started sort of,
+
+69
+00:05:36.300 --> 00:05:41.200
+of course we didn't instantly
+use it on Amoeba because it
+
+70
+00:05:41.200 --> 00:05:46.330
+wasn't mature enough to actually write
+the Amoeba utilities that we wanted.
+
+71
+00:05:46.330 --> 00:05:53.690
+But it was already instantly useful
+enough to run on our Unix system.
+
+72
+00:05:53.690 --> 00:06:00.070
+People within CWI, even outside my
+own department, started using it.
+
+73
+00:06:00.070 --> 00:06:04.380
+And recognizing that it was fun and
+productive to use.
+
+74
+00:06:04.380 --> 00:06:06.860
+And they used it for small scripts and
+
+75
+00:06:06.860 --> 00:06:12.450
+people started contributing
+things like bug fixes.
+
+76
+00:06:12.450 --> 00:06:16.440
+Somehow things then went very
+quickly during that first year.
+
+77
+00:06:16.440 --> 00:06:22.410
+Because I think by the end of 1990,
+so a year after I started,
+
+78
+00:06:22.410 --> 00:06:26.670
+we developed a plan to do an open
+source release of this language.
+
+79
+00:06:28.530 --> 00:06:32.620
+And this was before the word open
+source had even been coined.
+
+80
+00:06:33.740 --> 00:06:35.000
+So we didn't call it that.
+
+81
+00:06:35.000 --> 00:06:36.740
+But we did have some models.
+
+82
+00:06:36.740 --> 00:06:44.550
+We had like X11,
+the window system at the time,
+
+83
+00:06:44.550 --> 00:06:51.671
+had a distribution that was one
+of the sort of open source examples.
+
+84
+00:06:51.671 --> 00:06:57.556
+With two colleagues I worked
+sort of building a distribution and
+
+85
+00:06:57.556 --> 00:07:01.969
+we, actually it turned out
+to be very simple to get
+
+86
+00:07:01.969 --> 00:07:05.556
+management to sign off on this release.
+
+87
+00:07:08.505 --> 00:07:11.662
+That was an an incredibly lucky stroke.
+
+88
+00:07:11.662 --> 00:07:17.503
+I just sort of, I asked my manager's
+manager what should we do about this and
+
+89
+00:07:17.503 --> 00:07:20.331
+he said oh, you gotta talk to this and
+
+90
+00:07:20.331 --> 00:07:25.010
+this person in the administrative
+branch of the institute.
+
+91
+00:07:25.010 --> 00:07:27.020
+And I talked to this woman and
+
+92
+00:07:27.020 --> 00:07:31.770
+she was like in charge of all
+legal affairs I believe and
+
+93
+00:07:31.770 --> 00:07:37.830
+I said well I have written this source
+code and I would like to release that and
+
+94
+00:07:37.830 --> 00:07:43.660
+I have sort of made up a license that's
+like identical to the MIT license,
+
+95
+00:07:43.660 --> 00:07:48.640
+I could say MIT releases software under
+exactly this license and we just put like
+
+96
+00:07:48.640 --> 00:07:55.520
+the formal name of our institute in there
+instead of the regents of the institute.
+
+97
+00:07:55.520 --> 00:08:02.810
+She asked me some questions like did
+someone pay for this to be developed?
+
+98
+00:08:02.810 --> 00:08:06.670
+And my answer was no,
+I started it all on my own time and
+
+99
+00:08:08.100 --> 00:08:10.730
+it was for this research project and
+that sort of.
+
+100
+00:08:12.120 --> 00:08:13.390
+My manager's fine with it.
+
+101
+00:08:15.290 --> 00:08:17.970
+And so she said sure, go ahead.
+
+102
+00:08:17.970 --> 00:08:20.880
+And we did it and that's so
+
+103
+00:08:20.880 --> 00:08:26.310
+in February '91,
+we did the first Python release.
+
+104
+00:08:27.360 --> 00:08:31.570
+It felt like, at the time
+like an incredible milestone.
+
+105
+00:08:31.570 --> 00:08:35.260
+We needed to post it to Usenet.
+
+106
+00:08:35.260 --> 00:08:37.480
+There was this Usenet newsgroup that
+
+107
+00:08:39.200 --> 00:08:44.700
+would receive source code for
+random free projects.
+
+108
+00:08:44.700 --> 00:08:50.580
+I got immediately started getting
+useful positive feedback from,
+
+109
+00:08:50.580 --> 00:08:57.490
+well initially just from random people
+who picked up free software from Usenet.
+
+110
+00:08:57.490 --> 00:09:02.670
+And we quickly sort of got into
+
+111
+00:09:02.670 --> 00:09:07.340
+a routine of doing new Python releases.
+
+112
+00:09:07.340 --> 00:09:13.410
+And every time, I mean there were the
+obvious improvements to the language and
+
+113
+00:09:13.410 --> 00:09:15.500
+the library and bug fixes,
+
+114
+00:09:15.500 --> 00:09:20.670
+a very important category of things that
+were often contributed were ports or
+
+115
+00:09:20.670 --> 00:09:26.200
+ported fixes where people had different
+architectures, different compilers.
+
+116
+00:09:27.330 --> 00:09:30.710
+The Unix world was much less
+homogenous at the time.
+
+117
+00:09:30.710 --> 00:09:34.410
+There were lots of small Unix vendors
+that had their own compilers, or
+
+118
+00:09:34.410 --> 00:09:36.469
+their own hardware.
+
+119
+00:09:37.500 --> 00:09:38.970
+All sorts of things.
+
+120
+00:09:38.970 --> 00:09:45.350
+So the big things that happened during
+say the first half of the '90s was
+
+121
+00:09:45.350 --> 00:09:50.330
+a community of Python users and
+developers self-organized.
+
+122
+00:09:51.410 --> 00:09:56.969
+Then came the invitation to come to
+the United States for a couple of months
+
+123
+00:10:01.120 --> 00:10:06.540
+from NIST, the National Institute for
+Standards and Technology.
+
+124
+00:10:06.540 --> 00:10:08.350
+So I spent two months there.
+
+125
+00:10:08.350 --> 00:10:14.240
+We organized the first Python workshop,
+which was hosted by NIST.
+
+126
+00:10:14.240 --> 00:10:19.170
+Through that Python workshop I met
+people who offered me a job and from '95,
+
+127
+00:10:19.170 --> 00:10:23.870
+I mean I went back to the Netherlands for
+a few months and then from '95 to 2000
+
+128
+00:10:23.870 --> 00:10:28.910
+I worked in US in northern
+Virginia at CNRI.
+
+129
+00:10:30.350 --> 00:10:35.600
+And so there we worked through a lot
+of growth of the community and
+
+130
+00:10:35.600 --> 00:10:41.220
+the infrastructure. We created
+the Python website, I got in touch with
+
+131
+00:10:41.220 --> 00:10:45.830
+a bunch of people who are still active in
+the Python community like Barry Warsaw.
+
+132
+00:10:45.830 --> 00:10:51.620
+I think when I started there Python
+1.3 was about to be released.
+
+133
+00:10:51.620 --> 00:10:55.584
+And then while I was
+there we released several
+
+134
+00:10:55.584 --> 00:11:00.070
+subsequent versions leading
+up to 1.5.2 which for
+
+135
+00:11:00.070 --> 00:11:05.286
+some reason 1.5.0 was nothing but
+1.5.2 remained the sort of
+
+136
+00:11:05.286 --> 00:11:10.938
+the standard, the gold standard of Python
+for a very long time afterwards.
+
+137
+00:11:10.938 --> 00:11:20.938
+[MUSIC]

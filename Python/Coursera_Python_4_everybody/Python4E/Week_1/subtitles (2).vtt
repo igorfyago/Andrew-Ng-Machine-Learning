@@ -1,0 +1,1008 @@
+WEBVTT
+
+1
+00:00:08.981 --> 00:00:11.010
+Hello, and welcome to Python for
+Everybody.
+
+2
+00:00:11.010 --> 00:00:14.070
+My name's Charles Severance and
+I am your instructor.
+
+3
+00:00:14.070 --> 00:00:19.760
+We named this Python for Everybody because
+we are dedicated to the notion that
+
+4
+00:00:19.760 --> 00:00:24.780
+increasingly as our lives
+are surrounded by technology, that we
+
+5
+00:00:24.780 --> 00:00:28.590
+want you to become a maker of technology,
+not just a consumer of technology.
+
+6
+00:00:28.590 --> 00:00:32.890
+We want to change your
+perspective from this side
+
+7
+00:00:32.890 --> 00:00:37.050
+of technology where you are looking at it,
+to the other side where you're back here.
+
+8
+00:00:37.050 --> 00:00:40.840
+You are like a creator of the technology
+and you can create things.
+
+9
+00:00:40.840 --> 00:00:45.620
+And it takes a long time and you may not
+want to be a professional programmer ever,
+
+10
+00:00:45.620 --> 00:00:47.820
+you might just like read
+a little bit of data, but
+
+11
+00:00:47.820 --> 00:00:52.890
+we believe that everybody should
+know basically how to program and
+
+12
+00:00:52.890 --> 00:00:57.010
+how to get things done inside of
+a computer, just as much to just be
+
+13
+00:00:57.010 --> 00:01:02.730
+a responsible participant in a modern,
+increasingly technically oriented society.
+
+14
+00:01:04.550 --> 00:01:06.250
+Computers want to be helpful.
+
+15
+00:01:07.790 --> 00:01:10.510
+They are programmed, they are designed,
+the hardware's designed.
+
+16
+00:01:10.510 --> 00:01:12.620
+We'll talk about hardware
+in the next segment.
+
+17
+00:01:12.620 --> 00:01:16.100
+But it's designed and wired, and
+when you apply electricity to it,
+
+18
+00:01:16.100 --> 00:01:21.530
+it basically has one question, and
+that is what do you want to do next?
+
+19
+00:01:21.530 --> 00:01:24.990
+And if you think about your phone and
+all the apps that you have on your phone,
+
+20
+00:01:24.990 --> 00:01:27.770
+each app is like what to do next,
+what to do next.
+
+21
+00:01:27.770 --> 00:01:32.830
+So, as a programmer,
+your job is to serve the user.
+
+22
+00:01:32.830 --> 00:01:34.370
+The user has something they want to do.
+
+23
+00:01:34.370 --> 00:01:38.410
+Maybe they want to zing a bird towards
+a pig or maybe they need to analyze some
+
+24
+00:01:38.410 --> 00:01:41.250
+data, or maybe they want to do
+something like talk to their phone and
+
+25
+00:01:41.250 --> 00:01:44.560
+you have to be a real
+advanced computer scientist.
+
+26
+00:01:44.560 --> 00:01:49.160
+And so, as a user we just have so
+many wonderful programmers who have put so
+
+27
+00:01:49.160 --> 00:01:51.740
+much software that make
+these phones intelligent.
+
+28
+00:01:51.740 --> 00:01:54.670
+The hardware itself is
+not all that intelligent.
+
+29
+00:01:54.670 --> 00:01:59.160
+And our job as programmers is to act as
+intermediaries between the hardware and
+
+30
+00:01:59.160 --> 00:02:02.900
+the user to build something wonderful and
+beautiful.
+
+31
+00:02:02.900 --> 00:02:07.850
+And so, you can kind of imagine
+that your job as a programmer
+
+32
+00:02:07.850 --> 00:02:12.290
+is to intermediate between
+the hardware and the end user.
+
+33
+00:02:12.290 --> 00:02:16.050
+And if you're a professional programmer
+and you're trying to sell your software,
+
+34
+00:02:16.050 --> 00:02:19.370
+well, you're trying to imagine
+what the world might want.
+
+35
+00:02:19.370 --> 00:02:22.800
+And you could imagine all
+these app stores, etc.
+
+36
+00:02:22.800 --> 00:02:26.230
+And these are places that
+you can build software,
+
+37
+00:02:26.230 --> 00:02:30.610
+and exchange that software with
+other folks, and help people out.
+
+38
+00:02:31.720 --> 00:02:34.620
+And like I said,
+we are trying to flip you from
+
+39
+00:02:34.620 --> 00:02:38.990
+one side of this device to the other side
+of this device, where you are the maker.
+
+40
+00:02:38.990 --> 00:02:42.030
+And you can think of this as
+a tool to manage your calendar,
+
+41
+00:02:42.030 --> 00:02:45.690
+or drive your car and
+read a map, or whatever.
+
+42
+00:02:45.690 --> 00:02:47.310
+But when you look at it
+from the other side,
+
+43
+00:02:47.310 --> 00:02:50.520
+when you look at it from being
+a programmer, you use things like
+
+44
+00:02:50.520 --> 00:02:54.920
+compilers and interpreters and programming
+languages and networks, etc.
+
+45
+00:02:54.920 --> 00:02:57.440
+And we actually have tools that
+we are going to learn to use.
+
+46
+00:02:57.440 --> 00:03:01.930
+Python is a tool that the programmers
+on the back side of this computer
+
+47
+00:03:01.930 --> 00:03:05.189
+use to make new things for
+the front side of the computer.
+
+48
+00:03:06.340 --> 00:03:09.580
+Now, what's your motivation
+to become a programmer?
+
+49
+00:03:09.580 --> 00:03:11.680
+Well, the kind of gross motivation for
+
+50
+00:03:11.680 --> 00:03:14.430
+professional programmers is to build
+something for everyone else to use.
+
+51
+00:03:14.430 --> 00:03:17.560
+Like I worked on this open
+source software called Sakai,
+
+52
+00:03:17.560 --> 00:03:20.340
+which millions of people use around
+the world, teaching and learning.
+
+53
+00:03:20.340 --> 00:03:22.400
+It's very rewarding for me.
+
+54
+00:03:22.400 --> 00:03:24.210
+I feel really good about that.
+
+55
+00:03:24.210 --> 00:03:27.250
+You might build a guest book for
+a website.
+
+56
+00:03:27.250 --> 00:03:30.570
+But that's generally not the first
+thing that you're going to do
+
+57
+00:03:30.570 --> 00:03:32.150
+with your programming skills.
+
+58
+00:03:32.150 --> 00:03:33.210
+You might get some data.
+
+59
+00:03:33.210 --> 00:03:34.350
+You might be an accountant.
+
+60
+00:03:34.350 --> 00:03:35.630
+Or you might be a lawyer.
+
+61
+00:03:35.630 --> 00:03:37.270
+Or you might be a librarian.
+
+62
+00:03:37.270 --> 00:03:40.490
+And somebody's got some data and
+you can't get a report out of this data,
+
+63
+00:03:40.490 --> 00:03:41.970
+it's something you're
+really curious about.
+
+64
+00:03:41.970 --> 00:03:45.340
+Somebody says can you knock out
+a little piece of Python code
+
+65
+00:03:45.340 --> 00:03:49.080
+to count up the number of times
+that this happens on Saturday, but
+
+66
+00:03:49.080 --> 00:03:50.880
+then it also happens again on Monday.
+
+67
+00:03:50.880 --> 00:03:52.120
+Tell us how many times that happens.
+
+68
+00:03:52.120 --> 00:03:57.480
+And so you write 40 lines of code and it
+comes out and tells us what that data is.
+
+69
+00:03:57.480 --> 00:03:59.640
+And that's really useful.
+
+70
+00:03:59.640 --> 00:04:05.080
+The key difference between writing
+a program for someone else and writing
+
+71
+00:04:05.080 --> 00:04:10.640
+a program kind of for yourself to consume
+or just a few other people is the rigor.
+
+72
+00:04:10.640 --> 00:04:13.610
+You don't have to be such a professional
+
+73
+00:04:13.610 --> 00:04:15.410
+just to write code that
+you can use yourself.
+
+74
+00:04:15.410 --> 00:04:20.070
+If it works and it gets you
+the data you want, then job done.
+
+75
+00:04:20.070 --> 00:04:22.080
+If you want to become
+a professional programmer,
+
+76
+00:04:22.080 --> 00:04:25.870
+then you kind of have to study how to
+be more precise and more engineering.
+
+77
+00:04:25.870 --> 00:04:29.130
+But we're not going to worry about
+that in this beginning set of courses.
+
+78
+00:04:29.130 --> 00:04:33.230
+We just want you to learn the mechanics
+and the language of programming.
+
+79
+00:04:33.230 --> 00:04:36.040
+And so we kind of want to take you,
+like I said,
+
+80
+00:04:36.040 --> 00:04:38.700
+from being a user to being a programmer.
+
+81
+00:04:38.700 --> 00:04:44.060
+And as a programmer, you start thinking
+of yourself as living inside the computer.
+
+82
+00:04:44.060 --> 00:04:45.820
+So you're a consumer out here.
+
+83
+00:04:45.820 --> 00:04:47.730
+You're clicking on buttons and stuff.
+
+84
+00:04:47.730 --> 00:04:51.700
+And so as a programmer, you're going to
+write code and that code is going to use
+
+85
+00:04:51.700 --> 00:04:56.830
+data, networks, and CPUs, and memory, and
+then do something for the user.
+
+86
+00:04:56.830 --> 00:05:02.000
+So we're trying to change your perspective
+and sort of pull you into the computer.
+
+87
+00:05:03.390 --> 00:05:05.030
+Well, what are you doing in that computer?
+
+88
+00:05:05.030 --> 00:05:06.050
+What's code?
+What's software?
+
+89
+00:05:06.050 --> 00:05:07.150
+What's a program?
+
+90
+00:05:07.150 --> 00:05:10.840
+Well, a program is like a sequence
+of stored instructions.
+
+91
+00:05:10.840 --> 00:05:15.100
+And the idea is that the computer itself at the
+lowest level in the hardware is just not
+
+92
+00:05:15.100 --> 00:05:16.120
+that smart.
+
+93
+00:05:16.120 --> 00:05:20.710
+But it has a lot of flexibility in that
+if we give it the right instructions,
+
+94
+00:05:20.710 --> 00:05:21.860
+it can do amazing things.
+
+95
+00:05:21.860 --> 00:05:25.770
+If we give it right instructions to
+listen to voice, digitize the voice, and
+
+96
+00:05:25.770 --> 00:05:26.980
+make sense of the voice,
+
+97
+00:05:26.980 --> 00:05:30.000
+then you can write
+a program that can "hear".
+
+98
+00:05:30.000 --> 00:05:32.560
+The computer doesn't hear,
+the program hears.
+
+99
+00:05:32.560 --> 00:05:36.650
+The computer makes it so that it can run
+all the calculations that seems to make it
+
+100
+00:05:36.650 --> 00:05:40.530
+hear, but a human being or
+actually thousands of human beings
+
+101
+00:05:40.530 --> 00:05:43.370
+made it possible so
+that you could talk to your phone.
+
+102
+00:05:43.370 --> 00:05:47.310
+And so you can think of, at the far end
+of this, when you're building something
+
+103
+00:05:47.310 --> 00:05:50.780
+really brilliant like the ability for
+a computer to listen to you,
+
+104
+00:05:51.780 --> 00:05:56.080
+you are taking you, and all your
+creativity, and all the research that
+
+105
+00:05:56.080 --> 00:05:59.860
+you've done and you're building something
+really amazing and put it in the computer.
+
+106
+00:05:59.860 --> 00:06:03.680
+But it is still a stored series of
+instructions that runs step by step, and
+
+107
+00:06:03.680 --> 00:06:06.950
+someone figured out every single
+little step that has to happen.
+
+108
+00:06:06.950 --> 00:06:09.100
+And so once we figured this out,
+
+109
+00:06:09.100 --> 00:06:11.750
+we write the instructions carefully and
+then we give it to somebody.
+
+110
+00:06:11.750 --> 00:06:14.950
+Here is a program that
+does voice recognition.
+
+111
+00:06:14.950 --> 00:06:20.320
+And if you're interested in it,
+I say it's wonderfully creative.
+
+112
+00:06:20.320 --> 00:06:22.710
+As a professional programmer,
+I have loved my life.
+
+113
+00:06:22.710 --> 00:06:26.700
+I have loved the kinds of things that
+I do, that I build things for people.
+
+114
+00:06:26.700 --> 00:06:30.720
+And I make them happy, and
+then I sort of feed off of that and
+
+115
+00:06:30.720 --> 00:06:32.320
+then I build something else.
+
+116
+00:06:32.320 --> 00:06:35.260
+But ultimately it's just
+a set of instructions.
+
+117
+00:06:36.670 --> 00:06:38.370
+If you're like,
+what's in a set of instructions?
+
+118
+00:06:38.370 --> 00:06:40.010
+Well, here we go.
+
+119
+00:06:40.010 --> 00:06:42.670
+Here is a program for a human being.
+
+120
+00:06:42.670 --> 00:06:46.150
+Now I may be showing my age a little bit,
+but this is a YouTube video.
+
+121
+00:06:46.150 --> 00:06:49.750
+Hopefully, it's not taken down
+by copyright or whatever.
+
+122
+00:06:49.750 --> 00:06:52.700
+On this song called the Macarena.
+
+123
+00:06:52.700 --> 00:06:58.380
+And so, the Macarena is an algorithm or
+a series of steps that hopefully you,
+
+124
+00:06:58.380 --> 00:07:00.920
+five years ago or many years ago
+you would got to the bar and
+
+125
+00:07:00.920 --> 00:07:02.740
+you'd watched all these
+people doing these things.
+
+126
+00:07:02.740 --> 00:07:05.870
+Putting their hands up and putting their
+stuff around, and wiggle, wiggle, wiggle,
+
+127
+00:07:05.870 --> 00:07:07.180
+and turning around, right?
+
+128
+00:07:07.180 --> 00:07:08.250
+And you're sitting there, 
+and you're like okay,
+
+129
+00:07:08.250 --> 00:07:10.080
+what's the sequence of
+instructions that you're doing?
+
+130
+00:07:10.080 --> 00:07:12.410
+As a matter of fact,
+there's a looping thing.
+
+131
+00:07:12.410 --> 00:07:14.260
+As long as the music plays,
+you put your left hand out,
+
+132
+00:07:14.260 --> 00:07:15.140
+you put your right hand out.
+
+133
+00:07:15.140 --> 00:07:16.750
+You flip your left hand.
+
+134
+00:07:16.750 --> 00:07:18.950
+Flip your left hand, flip your right hand.
+
+135
+00:07:18.950 --> 00:07:20.150
+I forgot all about it.
+
+136
+00:07:20.150 --> 00:07:22.010
+But, here's something I want you to do.
+
+137
+00:07:22.010 --> 00:07:23.490
+I want you to look at this slide.
+
+138
+00:07:23.490 --> 00:07:24.700
+Now, I'm going to be quiet for a minute.
+
+139
+00:07:24.700 --> 00:07:28.060
+I want you to look at this slide,
+pause the video if necessary.
+
+140
+00:07:28.060 --> 00:07:30.900
+This, there are three
+bugs in this program.
+
+141
+00:07:32.270 --> 00:07:33.267
+It looks right, but there are three bugs.
+
+142
+00:07:33.267 --> 00:07:34.289
+So I'm going to stop for a second.
+
+143
+00:07:45.168 --> 00:07:47.130
+So hopefully you paused, if you had to.
+
+144
+00:07:47.130 --> 00:07:51.500
+But now I'm going to come back and
+I will show you what the bugs are.
+
+145
+00:07:51.500 --> 00:07:53.330
+And here are the three bugs.
+
+146
+00:07:53.330 --> 00:07:56.610
+Now if you didn't find them,
+even if you looked closely,
+
+147
+00:07:56.610 --> 00:07:58.760
+you have learned something
+about human beings and
+
+148
+00:07:58.760 --> 00:08:05.210
+that is that we human beings
+operate in an error-filled world.
+
+149
+00:08:05.210 --> 00:08:08.700
+There are typographical errors,
+people say things incorrectly.
+
+150
+00:08:08.700 --> 00:08:13.820
+And we as people just fix them as we're
+perceiving them, as we understand them.
+
+151
+00:08:14.820 --> 00:08:18.550
+But even as you read this,
+you might not have seen these mistakes,
+
+152
+00:08:18.550 --> 00:08:24.330
+because your brain just fixed them because
+we just fix errors in our environment.
+
+153
+00:08:24.330 --> 00:08:25.240
+It's what we do.
+
+154
+00:08:26.550 --> 00:08:28.960
+Computers aren't like that,
+they are not like that.
+
+155
+00:08:28.960 --> 00:08:32.180
+Although voice recognition,
+after a while, that software
+
+156
+00:08:32.180 --> 00:08:35.850
+does learn how to filter out errors, but
+that was really hard to write, okay?
+
+157
+00:08:35.850 --> 00:08:39.500
+Computers do not understand how to filter
+out errors, but with enough instruction,
+
+158
+00:08:39.500 --> 00:08:41.950
+you can kind of get them
+to filter out errors, okay?
+
+159
+00:08:41.950 --> 00:08:43.730
+And that's why search
+engines kind of work,
+
+160
+00:08:43.730 --> 00:08:47.910
+they're, it's sort of a soft intelligence,
+but it was really hard to build.
+
+161
+00:08:47.910 --> 00:08:50.536
+But when we start talking
+about writing programs,
+
+162
+00:08:50.536 --> 00:08:53.346
+whether it's writing programs
+to do search engines or
+
+163
+00:08:53.346 --> 00:08:57.730
+writing programs to do voice recognition,
+those programs have to be perfect.
+
+164
+00:08:57.730 --> 00:09:01.940
+They make the tiniest text
+contextual or typographical error.
+
+165
+00:09:01.940 --> 00:09:04.250
+those programs simply do not work.
+
+166
+00:09:04.250 --> 00:09:05.110
+And so, here we go.
+
+167
+00:09:06.220 --> 00:09:08.580
+So here we say right ham
+to the back of the head.
+
+168
+00:09:08.580 --> 00:09:10.500
+What? Where was there ham in this?
+
+169
+00:09:10.500 --> 00:09:13.820
+So you got this ham in your hand, and
+you went, hit in the back of your head.
+
+170
+00:09:15.620 --> 00:09:17.406
+You may not notice this, but
+
+171
+00:09:17.406 --> 00:09:22.540
+the computer is literally going to say,
+syntax error, I quit, right?
+
+172
+00:09:22.540 --> 00:09:26.970
+And so, syntax error is the moment
+where the computer says to itself,
+
+173
+00:09:26.970 --> 00:09:28.610
+I don't know what to do.
+
+174
+00:09:28.610 --> 00:09:30.590
+And the same thing is true here.
+
+175
+00:09:30.590 --> 00:09:32.300
+I gotta hit somebody,
+what are you talking about?
+
+176
+00:09:32.300 --> 00:09:36.140
+And so the computer is going to
+be completely lost by this.
+
+177
+00:09:36.140 --> 00:09:40.120
+You might look at this and you might
+just fix it and compensate for it.
+
+178
+00:09:40.120 --> 00:09:44.600
+So that's sort of a little set of
+programming, programs for people.
+
+179
+00:09:44.600 --> 00:09:46.310
+So that's the code that's right.
+
+180
+00:09:47.870 --> 00:09:51.340
+So, let's talk a little bit
+about programs in Python.
+
+181
+00:09:51.340 --> 00:09:55.830
+Like I said, it's a set of instructions.
+So I'm want to put up some text here and
+
+182
+00:09:55.830 --> 00:10:00.570
+I want you to count the number
+of each word in this text and
+
+183
+00:10:00.570 --> 00:10:04.590
+then tell me what's the most common word
+is and how many times this word occurs.
+
+184
+00:10:04.590 --> 00:10:05.627
+Here we go.
+
+185
+00:10:11.439 --> 00:10:16.786
+Count, just count, concentrate,
+concentrate, concentrate,
+
+186
+00:10:16.786 --> 00:10:21.662
+concentrate, and part of
+the interesting thing here is not so
+
+187
+00:10:21.662 --> 00:10:25.599
+much whether you can count those words or
+not, but
+
+188
+00:10:25.599 --> 00:10:32.050
+how your mind is actually reacting to
+the problem that I just placed you in.
+
+189
+00:10:32.050 --> 00:10:35.170
+You're probably like, ooh,
+this is just not good.
+
+190
+00:10:35.170 --> 00:10:39.720
+I'm so good, I can drive a car, I can
+play baseball, I can catch something.
+
+191
+00:10:39.720 --> 00:10:41.240
+I can sing a song.
+
+192
+00:10:41.240 --> 00:10:45.460
+And yet to be focused on counting these
+words seems really, really annoying.
+
+193
+00:10:45.460 --> 00:10:50.570
+It turns out this is one of those things,
+text analysis, is one of those things
+
+194
+00:10:50.570 --> 00:10:53.990
+that computers are really good at and
+we humans are really bad at.
+
+195
+00:10:53.990 --> 00:10:58.000
+So it's really great to delegate
+this problem to a computer,
+
+196
+00:10:58.000 --> 00:11:00.990
+if you know the language of the computer
+and you can talk to the computer.
+
+197
+00:11:00.990 --> 00:11:03.730
+And so,
+I don't expect you to look at this code.
+
+198
+00:11:03.730 --> 00:11:08.670
+We're going to spend many weeks looking
+at all the basics of this thing, but
+
+199
+00:11:08.670 --> 00:11:10.880
+this is a program.
+
+200
+00:11:10.880 --> 00:11:17.120
+This is a set of instructions, it's got
+two, six, about 11, 12 lines of code.
+
+201
+00:11:17.120 --> 00:11:21.590
+And in it, we have instructed the computer
+to read through a bunch of text,
+
+202
+00:11:21.590 --> 00:11:24.660
+count the words, and
+tell us what the most common word is.
+
+203
+00:11:24.660 --> 00:11:28.130
+And so if we run this program,
+and we give it a file of words,
+
+204
+00:11:28.130 --> 00:11:30.690
+it'll say the most common word is 
+"to" and there's 16.
+
+205
+00:11:30.690 --> 00:11:34.580
+That clown.txt that I just asked you,
+"the" is the most common word, and
+
+206
+00:11:34.580 --> 00:11:35.718
+there are seven of those.
+
+207
+00:11:35.718 --> 00:11:40.810
+And so, this is a,
+
+208
+00:11:40.810 --> 00:11:43.950
+this is basically an outline of a program,
+that, I mean,
+
+209
+00:11:43.950 --> 00:11:49.130
+it is a program that gets  
+solves this problem that we will learn about.
+
+210
+00:11:49.130 --> 00:11:51.610
+So, don't try to learn this right away.
+
+211
+00:11:51.610 --> 00:11:55.650
+Up next, we're going to talk about
+the hardware architecture and what goes on
+
+212
+00:11:55.650 --> 00:11:58.960
+inside the computer that you're going to
+make use of as you become a programmer.

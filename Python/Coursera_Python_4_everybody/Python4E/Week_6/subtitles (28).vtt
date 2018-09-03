@@ -1,0 +1,939 @@
+WEBVTT
+
+1
+00:00:09.313 --> 00:00:11.741
+So now we're going to build
+some of our own functions.
+
+2
+00:00:11.741 --> 00:00:14.366
+We sort of saw a little bit of
+that syntax at the very beginning.
+
+3
+00:00:14.366 --> 00:00:16.283
+We're going to explore
+using the def keyword and
+
+4
+00:00:16.283 --> 00:00:18.500
+some of the choices that we get to make.
+
+5
+00:00:18.500 --> 00:00:24.440
+And so the essence of this,
+I'll say this probably 20 times.
+
+6
+00:00:24.440 --> 00:00:27.730
+The def statement only
+defines the function.
+
+7
+00:00:27.730 --> 00:00:31.160
+There's a side effect to it, but
+it doesn't actually run the code.
+
+8
+00:00:31.160 --> 00:00:35.240
+It just remembers the code, and then later
+we will call and invoke the function.
+
+9
+00:00:36.590 --> 00:00:40.760
+So here's an example of some dysfunctional
+code that's not going to work very well.
+
+10
+00:00:40.760 --> 00:00:43.920
+And so we come in here, we set x = 5.
+
+11
+00:00:43.920 --> 00:00:46.210
+And you don't have to have the def
+at the beginning of the program.
+
+12
+00:00:46.210 --> 00:00:48.670
+We do a print statement,
+so out comes Hello.
+
+13
+00:00:48.670 --> 00:00:53.610
+And then we do a def statement and
+that cruises through here.
+
+14
+00:00:53.610 --> 00:00:56.770
+And the result is, is you have extended
+Python to have this thing called
+
+15
+00:00:56.770 --> 00:00:59.860
+the print_lyrics function, and
+it's got two bits of code in here.
+
+16
+00:00:59.860 --> 00:01:03.820
+Now, this print does a de-indent,
+so that sort of blocks this off.
+
+17
+00:01:03.820 --> 00:01:06.750
+That little bit inside
+the block is the function,
+
+18
+00:01:06.750 --> 00:01:10.840
+that stuff's been copied up to there, and
+now it continues on and it prints Yo.
+
+19
+00:01:11.980 --> 00:01:17.260
+And it adds 2 to x and then prints x, and
+out comes a 7 and now the program is done.
+
+20
+00:01:17.260 --> 00:01:19.960
+What happened to these lines of code?
+
+21
+00:01:19.960 --> 00:01:24.400
+And the answer is they never executed,
+they never executed.
+
+22
+00:01:24.400 --> 00:01:29.250
+And that's because the def statement
+doesn't automatically run the code.
+
+23
+00:01:29.250 --> 00:01:30.483
+You must invoke.
+
+24
+00:01:32.936 --> 00:01:35.260
+We did not invoke the function.
+
+25
+00:01:36.810 --> 00:01:40.701
+Not sure if that's a happy face or
+a sad face, it's a wry face,
+
+26
+00:01:40.701 --> 00:01:43.280
+it's a wondering what's going on face.
+
+27
+00:01:45.360 --> 00:01:47.360
+So we didn't invoke it, right?
+
+28
+00:01:47.360 --> 00:01:51.246
+We didn't invoke it and so it did not
+work and we didn't do any output.
+
+29
+00:01:51.246 --> 00:01:52.630
+Now why we did this?
+
+30
+00:01:52.630 --> 00:01:54.740
+I don't know why we did this.
+
+31
+00:01:54.740 --> 00:01:56.140
+Question mark, question mark.
+
+32
+00:01:56.140 --> 00:01:57.128
+Who knows why we did this.
+
+33
+00:01:57.128 --> 00:02:02.120
+But what we really meant to do probably
+is something that more looks like
+
+34
+00:02:02.120 --> 00:02:03.100
+the next bit.
+
+35
+00:02:03.100 --> 00:02:06.150
+Once you define it we got to call it,
+and that's the reuse part.
+
+36
+00:02:06.150 --> 00:02:09.560
+We had the store part working but
+not the reuse part.
+
+37
+00:02:09.560 --> 00:02:13.130
+So here we go, this is a little
+more of a functional bit of code.
+
+38
+00:02:13.130 --> 00:02:17.360
+Set x to 5, print out hello,
+out that comes.
+
+39
+00:02:17.360 --> 00:02:21.930
+Define it, this creates no output but
+the de-indent causes this block to be
+
+40
+00:02:22.930 --> 00:02:26.555
+part of that, and that's been stored.
+
+41
+00:02:26.555 --> 00:02:27.870
+Store.
+
+42
+00:02:27.870 --> 00:02:30.430
+Now we print out Yo, and so out comes Yo.
+
+43
+00:02:30.430 --> 00:02:32.090
+And then we call print_lyrics.
+
+44
+00:02:32.090 --> 00:02:36.210
+And again, print is a function,
+has parentheses with parameters.
+
+45
+00:02:36.210 --> 00:02:37.980
+This has parentheses with no parameters.
+
+46
+00:02:37.980 --> 00:02:40.245
+We didn't put any parameters in,
+we'll get to that in a second.
+
+47
+00:02:40.245 --> 00:02:43.345
+Print_lyrics now says, oh, run this code.
+
+48
+00:02:43.345 --> 00:02:46.391
+So out comes these two print statements,
+
+49
+00:02:46.391 --> 00:02:49.367
+then we add 2 to x,
+print it, and then out comes 7.
+
+50
+00:02:49.367 --> 00:02:55.970
+So this is the store, this is the reuse,
+this is the call, this is invoke.
+
+51
+00:02:57.760 --> 00:02:58.260
+Okay?
+
+52
+00:02:59.370 --> 00:02:59.870
+Okay.
+
+53
+00:03:01.630 --> 00:03:04.490
+So everything we've shown so
+far has no arguments,
+
+54
+00:03:04.490 --> 00:03:06.570
+except this max did have an argument.
+
+55
+00:03:06.570 --> 00:03:08.450
+That max is input and
+
+56
+00:03:08.450 --> 00:03:13.190
+then we will get something back, the w, and
+then the w will get stuck into big.
+
+57
+00:03:13.190 --> 00:03:17.540
+So arguments are input, so
+if we want to define arguments in our
+
+58
+00:03:17.540 --> 00:03:21.910
+own functions that we're making,
+we just put them in the parentheses.
+
+59
+00:03:21.910 --> 00:03:25.630
+Now it's like a variable,
+we're choosing a variable name.
+
+60
+00:03:25.630 --> 00:03:28.400
+But this variable sort of doesn't exist.
+
+61
+00:03:28.400 --> 00:03:31.328
+This lang variable is best
+thought of as an alias.
+
+62
+00:03:33.002 --> 00:03:36.451
+It's an alias for whatever the first
+parameter is going to be when that
+
+63
+00:03:36.451 --> 00:03:39.265
+particular function invocation happens.
+
+64
+00:03:39.265 --> 00:03:41.349
+So we're going to invoke
+this function three times,
+
+65
+00:03:41.349 --> 00:03:44.335
+we're going to put in parentheses
+three different things.
+
+66
+00:03:44.335 --> 00:03:49.025
+This is a way to have code that's almost
+the same but a little bit different.
+
+67
+00:03:49.025 --> 00:03:51.689
+By pushing in different parameters,
+then the code does something different.
+
+68
+00:03:53.200 --> 00:03:57.870
+And so this really is just a placeholder
+to say whatever the first parameter was.
+
+69
+00:03:57.870 --> 00:04:00.680
+If that first parameter is es,
+then print this.
+
+70
+00:04:00.680 --> 00:04:03.990
+If that first parameter is fr, print that.
+
+71
+00:04:03.990 --> 00:04:05.360
+Otherwise, print that.
+
+72
+00:04:05.360 --> 00:04:05.945
+So.
+
+73
+00:04:07.566 --> 00:04:11.663
+As our program runs, this accomplishes
+nothing, doesn't run any code, but
+
+74
+00:04:11.663 --> 00:04:14.870
+it creates this thing
+called greet out there.
+
+75
+00:04:14.870 --> 00:04:17.370
+And we've indicated to Python
+we expect a parameter.
+
+76
+00:04:17.370 --> 00:04:21.550
+We expect that when this is invoked or
+called, we want one parameter.
+
+77
+00:04:21.550 --> 00:04:26.860
+So then we call greet, and again,
+Python remembers to come back to here.
+
+78
+00:04:26.860 --> 00:04:30.250
+And then it fires up to here and
+starts this line of code.
+
+79
+00:04:30.250 --> 00:04:34.400
+And en, lang is an alias for en.
+
+80
+00:04:34.400 --> 00:04:38.455
+So it's like lang is not es,
+
+81
+00:04:38.455 --> 00:04:42.710
+lang is not fr, so this code runs,
+out comes Hello, and then we're done.
+
+82
+00:04:42.710 --> 00:04:46.570
+And it says go back to where you
+remembered you were supposed to pick up
+
+83
+00:04:46.570 --> 00:04:47.260
+next, which is here.
+
+84
+00:04:48.410 --> 00:04:50.970
+Okay? So it says pick up next.
+
+85
+00:04:50.970 --> 00:04:55.270
+Then it goes on to the next
+statement here, greet.
+
+86
+00:04:55.270 --> 00:04:56.900
+So it's going to run this function again.
+
+87
+00:04:57.960 --> 00:05:00.170
+Remember where to come back to,
+which is right here.
+
+88
+00:05:01.650 --> 00:05:08.570
+Jump up to here, and
+then make es this time be what lang means.
+
+89
+00:05:08.570 --> 00:05:11.970
+So now, lang is es, so this is true.
+
+90
+00:05:11.970 --> 00:05:14.920
+We run that code, we come out and
+
+91
+00:05:14.920 --> 00:05:20.590
+we print out Hola and then we go
+back to where we remembered before.
+
+92
+00:05:20.590 --> 00:05:23.292
+Then we continue on,
+come to this code, okay?
+
+93
+00:05:23.292 --> 00:05:27.070
+So now we're in this code,
+
+94
+00:05:27.070 --> 00:05:31.450
+is time to run greet again,
+so we jump up to here.
+
+95
+00:05:31.450 --> 00:05:36.300
+And then this time fr is lang, and so
+
+96
+00:05:36.300 --> 00:05:42.190
+it runs here, that's false, this is true
+so it prints that out, prints out Bonjour.
+
+97
+00:05:42.190 --> 00:05:44.732
+Then it comes and it remembers.
+
+98
+00:05:44.732 --> 00:05:49.170
+Oh, forgot to remember where to come back to,
+and continues on, okay?
+
+99
+00:05:49.170 --> 00:05:52.080
+So you see the whole pattern there,
+a lot of different pretty colors there,
+
+100
+00:05:52.080 --> 00:05:53.260
+but you get the idea.
+
+101
+00:05:54.420 --> 00:05:58.790
+That it gets run a couple of times and
+lang is the alias for
+
+102
+00:05:58.790 --> 00:06:01.860
+whatever the first
+parameter happens to be.
+
+103
+00:06:01.860 --> 00:06:03.250
+And that's the best way to think about it.
+
+104
+00:06:03.250 --> 00:06:04.390
+Whatever the first parameter is,
+
+105
+00:06:04.390 --> 00:06:09.760
+I will use lang within here, I'll use
+lang to refer to the first parameter.
+
+106
+00:06:09.760 --> 00:06:14.476
+You might name this thing, don't do this,
+but you could name it p1, p1, p1.
+
+107
+00:06:14.476 --> 00:06:21.790
+So parameter one, no, Python wouldn't care
+but it's really just the first parameter.
+
+108
+00:06:21.790 --> 00:06:24.170
+Lang itself is not really
+
+109
+00:06:24.170 --> 00:06:27.910
+a variable in that there is no piece
+of memory that lang belongs in.
+
+110
+00:06:29.190 --> 00:06:31.930
+It really sort of is
+an alias of something else.
+
+111
+00:06:31.930 --> 00:06:32.440
+Okay?
+
+112
+00:06:34.114 --> 00:06:34.614
+Okay.
+
+113
+00:06:35.960 --> 00:06:40.000
+Now, when we're looking at like the float
+statement or the input statement,
+
+114
+00:06:40.000 --> 00:06:44.810
+we see things like input parenthesis blah,
+
+115
+00:06:44.810 --> 00:06:48.160
+blah, blah, parenthesis equals x, right?
+
+116
+00:06:48.160 --> 00:06:49.500
+And so we're going to assign something.
+
+117
+00:06:49.500 --> 00:06:54.410
+The question is. what is this
+residual value that comes back?
+
+118
+00:06:54.410 --> 00:06:57.510
+And within the function, we,
+as the writer of the function,
+
+119
+00:06:57.510 --> 00:07:02.470
+get to determine what that residual
+value is by the return statement.
+
+120
+00:07:02.470 --> 00:07:08.520
+So, basically even though this is really
+a trivial function, has no parameters,
+
+121
+00:07:08.520 --> 00:07:10.400
+the return statement does two things.
+
+122
+00:07:10.400 --> 00:07:15.260
+One, it stops the function, and
+it jumps to that next line, right?
+
+123
+00:07:15.260 --> 00:07:18.102
+But two, it also determines 
+the residual value.
+
+124
+00:07:22.113 --> 00:07:25.525
+So by saying return,
+if we come in here, and so
+
+125
+00:07:25.525 --> 00:07:30.265
+we do this and then we're in
+the middle of this print statement.
+
+126
+00:07:30.265 --> 00:07:34.905
+So it sort of pauses here and then it
+runs this code and then the return says,
+
+127
+00:07:36.055 --> 00:07:40.130
+oh, this little bit that was the function,
+send that back right there.
+
+128
+00:07:40.130 --> 00:07:44.670
+So that means that this is really print
+Hello Glenn, which prints out Hello Glenn.
+
+129
+00:07:45.800 --> 00:07:48.406
+And then it goes on to the next line,
+it runs greet again.
+
+130
+00:07:52.524 --> 00:07:58.880
+Runs greet again, comes in here and so
+now Hello becomes this residual value.
+
+131
+00:07:58.880 --> 00:08:01.140
+Now it's not very clever but
+you get the idea.
+
+132
+00:08:01.140 --> 00:08:06.110
+This residual value, it's like
+Hello Sally, so it prints out Hello Sally.
+
+133
+00:08:08.100 --> 00:08:12.996
+So here's a little better example
+of this where we're using
+
+134
+00:08:12.996 --> 00:08:15.878
+both arguments and a return value.
+
+135
+00:08:15.878 --> 00:08:18.170
+So again, this just remembers it.
+
+136
+00:08:18.170 --> 00:08:21.890
+We're going to say greet and
+en, so en is lang.
+
+137
+00:08:21.890 --> 00:08:25.593
+greet is going to run [NOISE] and
+it runs this.
+
+138
+00:08:25.593 --> 00:08:30.560
+Here now we've returned Hello,
+so this Hello becomes this.
+
+139
+00:08:30.560 --> 00:08:35.060
+So Hello is the residual value of
+the function evaluation, and so
+
+140
+00:08:35.060 --> 00:08:36.130
+out comes Hello Glenn.
+
+141
+00:08:38.950 --> 00:08:41.970
+So now, we do this, greet es.
+
+142
+00:08:41.970 --> 00:08:45.500
+So we're going to call this code,
+and es is going to come in as lang.
+
+143
+00:08:45.500 --> 00:08:48.910
+And in this case,
+it's going run this and return Hola.
+
+144
+00:08:48.910 --> 00:08:55.781
+So Hola is going to then become this
+replaces, and it says Hola Sally.
+
+145
+00:08:58.277 --> 00:09:03.174
+And so now we're going to do it again,
+greet fr, greet comes up here,
+
+146
+00:09:03.174 --> 00:09:08.170
+we're passing in fr as the language,
+false, true, and then return.
+
+147
+00:09:09.170 --> 00:09:11.760
+Return doesn't come out here,
+return is done.
+
+148
+00:09:11.760 --> 00:09:17.010
+That's it, you're done at that point, and
+you also specified the residual value of
+
+149
+00:09:17.010 --> 00:09:19.442
+this little bit, and
+that's Bonjour Michael.
+
+150
+00:09:19.442 --> 00:09:24.500
+By the way Glenn, Sally, and
+Michael are real people.
+
+151
+00:09:24.500 --> 00:09:28.350
+I always just use names of real
+people that are actual people I know.
+
+152
+00:09:30.110 --> 00:09:32.750
+Okay, so now what we're going to do is
+we're going to take a look again at that
+
+153
+00:09:32.750 --> 00:09:35.810
+max function, but we're going to
+understand how the return works.
+
+154
+00:09:35.810 --> 00:09:37.840
+This is really more about the return.
+
+155
+00:09:37.840 --> 00:09:41.460
+So if we take a look at max,
+so we're going to
+
+156
+00:09:41.460 --> 00:09:45.260
+evaluate the right-hand side of this so
+we have something to send into big.
+
+157
+00:09:45.260 --> 00:09:49.800
+So max, Hello world, says take this
+parameter and send it in to max.
+
+158
+00:09:49.800 --> 00:09:52.780
+Here's the max function, right?
+
+159
+00:09:52.780 --> 00:09:57.060
+And so Hello world comes in
+to max as some parameter.
+
+160
+00:09:57.060 --> 00:10:00.110
+We don't know what it's named inside max,
+we really don't care.
+
+161
+00:10:00.110 --> 00:10:01.630
+But, it's going to do something,
+
+162
+00:10:01.630 --> 00:10:04.220
+you know, read some stuff, check to
+see if it's a string or something.
+
+163
+00:10:04.220 --> 00:10:05.960
+And then it's going to loop
+through a bunch of stuff and
+
+164
+00:10:05.960 --> 00:10:08.170
+figure out what the largest thing is.
+
+165
+00:10:08.170 --> 00:10:11.847
+And figure this out, read through,
+pick the w as the largest one.
+
+166
+00:10:11.847 --> 00:10:16.625
+And then it's going to execute a return
+statement because it has to pass back
+
+167
+00:10:16.625 --> 00:10:18.380
+the w to us. Right?
+
+168
+00:10:18.550 --> 00:10:22.720
+So, to communicate out of
+the function back to the real world,
+
+169
+00:10:22.720 --> 00:10:25.690
+here's our real world here,
+it says return 'w'.
+
+170
+00:10:25.690 --> 00:10:28.260
+Now it's probably a variable,
+but you get the idea.
+
+171
+00:10:28.260 --> 00:10:31.460
+It has to run a return statement,
+and that's the end of execution.
+
+172
+00:10:31.460 --> 00:10:34.730
+It doesn't continue, it doesn't even
+run a single statement after return.
+
+173
+00:10:34.730 --> 00:10:40.210
+But then it sends back to us to replace in
+
+174
+00:10:40.210 --> 00:10:46.540
+that original statement the w
+then becomes the residual value.
+
+175
+00:10:46.540 --> 00:10:48.300
+And then the w is what goes into big.
+
+176
+00:10:48.300 --> 00:10:55.050
+Now after a while you won't need to look
+at all of this syntax in such detail.
+
+177
+00:10:55.050 --> 00:10:59.000
+I just want you to be able to know every
+single character and what they mean.
+
+178
+00:10:59.000 --> 00:11:02.148
+And slow this down into slow motion
+because after a while you'll just type
+
+179
+00:11:02.148 --> 00:11:04.139
+this stuff and
+you won't even think about it.
+
+180
+00:11:04.139 --> 00:11:07.674
+But you need to be able to slow it down
+to sort of slow motion if you need to.
+
+181
+00:11:09.690 --> 00:11:13.770
+Okay, so you can have more than one
+parameter as you might well expect.
+
+182
+00:11:13.770 --> 00:11:15.310
+This says I want two parameters.
+
+183
+00:11:15.310 --> 00:11:18.640
+Again, the name of these things
+inside here hardly matters.
+
+184
+00:11:18.640 --> 00:11:21.650
+Just that's the first parameter,
+that's the second parameter.
+
+185
+00:11:21.650 --> 00:11:24.480
+In a call, we pass in 3 and 5.
+
+186
+00:11:24.480 --> 00:11:28.740
+So that is easy, the number and order of
+
+187
+00:11:28.740 --> 00:11:33.980
+the parameters is the same in the function 
+invocation as it is in the function definition.
+
+188
+00:11:33.980 --> 00:11:36.910
+And we just add these two numbers
+together, make it a local variable, and
+
+189
+00:11:36.910 --> 00:11:37.910
+then return it.
+
+190
+00:11:37.910 --> 00:11:42.840
+So 8 becomes what comes back and
+gets stuck into x.
+
+191
+00:11:42.840 --> 00:11:45.490
+So more than one parameter,
+more than one argument, no problem.
+
+192
+00:11:45.490 --> 00:11:49.680
+The names of the parameters inside
+the functions, no big deal.
+
+193
+00:11:51.360 --> 00:11:53.750
+So some functions do not return values.
+
+194
+00:11:53.750 --> 00:11:55.620
+We call them non-fruitful functions,
+
+195
+00:11:55.620 --> 00:11:58.560
+and if they return values then
+we call them fruitful functions.
+
+196
+00:11:59.750 --> 00:12:03.460
+So in summary, this was a pretty
+quick introduction to functions.
+
+197
+00:12:03.460 --> 00:12:07.650
+Like I said, I don't really expect
+you to build a bunch of functions,
+
+198
+00:12:07.650 --> 00:12:10.860
+but I want you to understand them.
+
+199
+00:12:10.860 --> 00:12:12.350
+And so when the time comes, and
+
+200
+00:12:12.350 --> 00:12:15.350
+you're thinking to yourself, oh
+wow, it's time to build a function.
+
+201
+00:12:15.350 --> 00:12:17.550
+You'll know how to build them and
+you'll know how to use them.

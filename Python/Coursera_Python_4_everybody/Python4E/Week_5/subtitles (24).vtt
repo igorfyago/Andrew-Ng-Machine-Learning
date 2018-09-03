@@ -1,0 +1,639 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.580
+Hello, welcome to Python for Everybody.
+
+2
+00:00:02.580 --> 00:00:04.808
+I'm Charles Severance, your instructor.
+
+3
+00:00:04.808 --> 00:00:08.953
+And in this short video,
+we are going to do exercise 3.2,
+
+4
+00:00:08.953 --> 00:00:12.462
+which is really just
+a rewrite of exercise 3.1.
+
+5
+00:00:12.462 --> 00:00:17.185
+We're going to deal with some error
+conditions using try and except.
+
+6
+00:00:17.185 --> 00:00:21.556
+So let's go ahead and get started, but
+this is a good example of something where
+
+7
+00:00:21.556 --> 00:00:24.244
+you want to start with
+the previous assignment.
+
+8
+00:00:24.244 --> 00:00:27.804
+So let's open the file that I did before,
+and so
+
+9
+00:00:27.804 --> 00:00:31.188
+this happens to right here, ex_03_01.
+
+10
+00:00:31.188 --> 00:00:38.080
+And there's my previous
+program that I wrote for exercise 3.1.
+
+11
+00:00:38.080 --> 00:00:41.220
+And let me set myself up with Python,
+so I can actually run it.
+
+12
+00:00:41.220 --> 00:00:45.841
+cd Desktop, cd py4e,
+
+13
+00:00:45.841 --> 00:00:50.461
+these will get better,
+
+14
+00:00:50.461 --> 00:00:55.092
+cd ex _03_01 ls.
+
+15
+00:00:55.092 --> 00:01:01.133
+And I can say python3 ex_03_01.py,
+
+16
+00:01:01.133 --> 00:01:04.240
+and it works fine if you
+give it the right data.
+
+17
+00:01:04.240 --> 00:01:10.340
+But if you give it bad data,
+10 and t-e-n, it blows up, right?
+
+18
+00:01:10.340 --> 00:01:14.500
+And like always, you're getting
+tracebacks for all kinds of things.
+
+19
+00:01:14.500 --> 00:01:15.730
+But this one's pretty clear.
+
+20
+00:01:15.730 --> 00:01:18.113
+If you slowly but surely don't get mad,
+
+21
+00:01:18.113 --> 00:01:21.422
+just say, oh, line 4,
+what could be wrong in line 4?
+
+22
+00:01:21.422 --> 00:01:28.468
+Could not convert string to float 'ten', so
+what it's complaining about is on line 4,
+
+23
+00:01:28.468 --> 00:01:34.851
+this variable sr, which is the string t-e-n,
+the letters t-e-n, is not working.
+
+24
+00:01:34.851 --> 00:01:38.103
+So this function is blowing up, okay?
+
+25
+00:01:38.103 --> 00:01:41.110
+So that's what it's complaining about and
+that's what we want to deal with.
+
+26
+00:01:42.470 --> 00:01:45.830
+Now when you're using try and except,
+you don't want to just put a try, you
+
+27
+00:01:45.830 --> 00:01:49.315
+want to limit how much data you
+put in the try and except.
+
+28
+00:01:50.520 --> 00:01:55.147
+So let's get started on assignment 3.2, so
+
+29
+00:01:55.147 --> 00:01:59.311
+the nice thing that we can
+do here is that we can say file,
+
+30
+00:01:59.311 --> 00:02:03.837
+save as, and
+go up a folder to PY for Everybody.
+
+31
+00:02:03.837 --> 00:02:10.223
+Make a new folder called ex_03_02,
+
+32
+00:02:10.223 --> 00:02:17.418
+and then save the file as ex_03_02.py.
+
+33
+00:02:17.418 --> 00:02:22.178
+Okay, so now make sure, get rid of that. So make 
+sure  this is different, we're in a different folder,
+
+34
+00:02:22.178 --> 00:02:24.380
+so we're not editing that old file.
+
+35
+00:02:24.380 --> 00:02:28.340
+And the first thing I'm going to do is,
+hey, come on.
+
+36
+00:02:28.340 --> 00:02:31.720
+Well, I'm going to get rid of
+some of these print statements.
+
+37
+00:02:31.720 --> 00:02:33.160
+I mean, the code's going to work.
+
+38
+00:02:34.590 --> 00:02:35.090
+Come on.
+
+39
+00:02:38.408 --> 00:02:39.410
+Okay.
+
+40
+00:02:39.410 --> 00:02:44.620
+So the dangerous line of code is right
+here and so, the problem becomes
+
+41
+00:02:44.620 --> 00:02:49.520
+how are we going to deal with this?
+And so, let me do this as well.
+
+42
+00:02:49.520 --> 00:02:56.330
+So here is, if I do pwd, I'm in ex_03_01,
+this could drive you crazy.
+
+43
+00:02:57.850 --> 00:03:01.285
+Oh wait, I'm in the wrong folder,
+how come this is in the wrong folder?
+
+44
+00:03:01.285 --> 00:03:06.391
+I put ex_03_01,
+
+45
+00:03:06.391 --> 00:03:09.712
+why is this in?
+
+46
+00:03:16.620 --> 00:03:18.390
+See, you've got to watch this.
+
+47
+00:03:18.390 --> 00:03:19.456
+I think I'm in the wrong folder.
+
+48
+00:03:19.456 --> 00:03:22.181
+File, open.
+
+49
+00:03:27.707 --> 00:03:32.782
+ex_03_02, ex_03_02.
+
+50
+00:03:32.782 --> 00:03:34.852
+Okay, so now I'm in the right spot.
+
+51
+00:03:34.852 --> 00:03:38.841
+I don't know why that wasn't
+showing up right, but
+
+52
+00:03:38.841 --> 00:03:44.290
+keep your eye on this, especially if
+your using file names that are so.
+
+53
+00:03:44.290 --> 00:03:48.450
+So, I'm in this ex_03_01, so
+I'm going to use a command, and
+
+54
+00:03:48.450 --> 00:03:53.486
+you can use this both in Windows and
+in Linux and in Mac, cd dot, dot.
+
+55
+00:03:53.486 --> 00:03:56.410
+And what that does is
+that goes up a folder.
+
+56
+00:03:56.410 --> 00:03:59.790
+Part of the goal of this course is to
+teach you how to use things like this,
+
+57
+00:03:59.790 --> 00:04:01.350
+just how to use these command lines.
+
+58
+00:04:01.350 --> 00:04:05.670
+Because to be a programmer, even doing the
+simplest stuff, you've got to
+
+59
+00:04:05.670 --> 00:04:07.820
+manipulate files, and
+you've got to be able to use command line.
+
+60
+00:04:07.820 --> 00:04:09.530
+You've got to use all these things.
+
+61
+00:04:09.530 --> 00:04:13.210
+Not everything is a full screen
+clickety pointedly thing, okay?
+
+62
+00:04:13.210 --> 00:04:14.709
+And so what does cd do?
+
+63
+00:04:14.709 --> 00:04:19.932
+Well, it looks at this and it goes up
+one folder, so it moved us up into here.
+
+64
+00:04:19.932 --> 00:04:24.497
+And so you can see after the cd,
+my current working directory is that, and
+
+65
+00:04:24.497 --> 00:04:26.348
+I can do ls to see the folders.
+
+66
+00:04:26.348 --> 00:04:29.846
+And now I see my new ex_03_02, so
+
+67
+00:04:29.846 --> 00:04:35.040
+I'll say cd ex_03_02 and
+part of being a programmer
+
+68
+00:04:35.040 --> 00:04:40.870
+is having a lot of folders with
+wierd names to organize your stuff.
+
+69
+00:04:41.940 --> 00:04:46.723
+So here we go, now we have this file and
+
+70
+00:04:46.723 --> 00:04:51.057
+this file in the same place, pwd,
+
+71
+00:04:51.057 --> 00:04:56.888
+this matches this, that
+file matches this name, and
+
+72
+00:04:56.888 --> 00:05:03.629
+I can say python3 ex_03_02.py 10, 10.
+
+73
+00:05:03.629 --> 00:05:10.237
+Okay. So now, I'm just nervous enough
+to want to double-check this,
+
+74
+00:05:10.237 --> 00:05:15.783
+and so I will do something like this,
+I will say XYZ Pay,
+
+75
+00:05:15.783 --> 00:05:20.514
+and save it, and
+then run it again, python3.
+
+76
+00:05:22.331 --> 00:05:24.721
+I don't care about the numbers.
+
+77
+00:05:26.457 --> 00:05:27.660
+See the XYZ Pay?
+
+78
+00:05:27.660 --> 00:05:32.010
+So now I know I'm in that file, so
+I do stuff like this all the time to
+
+79
+00:05:32.010 --> 00:05:34.950
+triple-check that I'm really
+working with the file.
+
+80
+00:05:34.950 --> 00:05:41.110
+So, now I'm in this file and now let
+me make my mistake again. 10, ten.
+
+81
+00:05:41.110 --> 00:05:42.710
+And now there is my failure, right?
+
+82
+00:05:42.710 --> 00:05:45.600
+So there's the mistake, and
+that's the thing we've got to fix.
+
+83
+00:05:45.600 --> 00:05:49.090
+So, we have these lines of code.
+
+84
+00:05:49.090 --> 00:05:52.807
+So what you do in Python when you know
+that there's a dangerous set of lines and
+
+85
+00:05:52.807 --> 00:05:55.370
+you want to take out insurance on those.
+
+86
+00:05:55.370 --> 00:05:59.950
+You put them in a try-catch block,
+a try/except block,
+
+87
+00:05:59.950 --> 00:06:05.920
+and what are we supposed to
+say when it blows up?
+
+88
+00:06:05.920 --> 00:06:11.539
+It says, error, please enter numeric
+input, I'll just copy that and
+
+89
+00:06:11.539 --> 00:06:16.220
+paste this, print "error,
+please enter numeric input"
+
+90
+00:06:16.220 --> 00:06:19.890
+make that a little bit wider,
+print that out.
+
+91
+00:06:19.890 --> 00:06:22.232
+And I want to put this
+print statement back in.
+
+92
+00:06:24.332 --> 00:06:26.570
+Okay? So here we go.
+
+93
+00:06:26.570 --> 00:06:28.740
+So now what's going to happen,
+is we're going to come in here,
+
+94
+00:06:28.740 --> 00:06:30.840
+we're going to run these.
+
+95
+00:06:30.840 --> 00:06:34.140
+If they work,
+we'll skip the except block and continue.
+
+96
+00:06:34.140 --> 00:06:38.868
+If they blow up,
+then it's going to run this except block.
+
+97
+00:06:38.868 --> 00:06:40.441
+So let's run it.
+
+98
+00:06:40.441 --> 00:06:43.280
+Let's start with the working case,
+that still works, that's good.
+
+99
+00:06:43.280 --> 00:06:46.537
+it comes and does this extra
+print that I've got on line 9.
+
+100
+00:06:46.537 --> 00:06:48.733
+Let's go in the bad case, 10, ten.
+
+101
+00:06:51.620 --> 00:06:56.159
+Okay, so we're going to parse this
+a little bit. So it says error,
+
+102
+00:06:56.159 --> 00:07:00.950
+please enter numeric input, but
+then I still get a traceback.
+
+103
+00:07:00.950 --> 00:07:04.580
+And you're like, I hate computers,
+because doesn't this look beautiful?
+
+104
+00:07:04.580 --> 00:07:08.140
+I got a try and indent it,
+it looks just like what I saw, right?
+
+105
+00:07:08.140 --> 00:07:09.440
+It's so beautiful.
+
+106
+00:07:09.440 --> 00:07:11.540
+Why does this computer hate me so badly?
+
+107
+00:07:12.570 --> 00:07:15.490
+Well, then take a step back,
+and say, you know what?
+
+108
+00:07:15.490 --> 00:07:18.490
+The computer is admitting that it's
+confused by what you've given it.
+
+109
+00:07:19.950 --> 00:07:24.450
+And so, just look, what line
+are you mad about, dear computer?
+
+110
+00:07:25.560 --> 00:07:26.360
+Line 9.
+
+111
+00:07:26.360 --> 00:07:27.950
+Okay, let's take a look at line 9.
+
+112
+00:07:27.950 --> 00:07:31.960
+It's always this line or
+the one before it, almost always.
+
+113
+00:07:31.960 --> 00:07:33.170
+Almost always it gets it right.
+
+114
+00:07:33.170 --> 00:07:35.860
+And it says name 'fr' is not defined.
+
+115
+00:07:37.850 --> 00:07:43.237
+So let's just focus on this,
+it's complaining about this.
+
+116
+00:07:43.237 --> 00:07:48.607
+And the problem is that it came
+down here, it run through here,
+
+117
+00:07:51.283 --> 00:07:55.195
+came down here, ran through here, and
+this blew up, that line never ran.
+
+118
+00:07:55.195 --> 00:07:57.844
+That's the line that blew up,
+and then it ran this error.
+
+119
+00:07:57.844 --> 00:08:02.752
+So it never, never,
+never got a variable or a value in fr.
+
+120
+00:08:02.752 --> 00:08:07.538
+And that's because, in this particular
+case, we would either have to
+
+121
+00:08:07.538 --> 00:08:12.239
+put an if statement in to make sure
+the rest of this code, or we can say,
+
+122
+00:08:12.239 --> 00:08:16.944
+if everything is just so bad in this
+thing and I don't want to continue,
+
+123
+00:08:16.944 --> 00:08:20.500
+quit basically says
+do not continue, okay?
+
+124
+00:08:20.500 --> 00:08:24.170
+So when it comes in here, it runs this,
+it blows up, it comes down to here,
+
+125
+00:08:24.170 --> 00:08:26.090
+it prints this, and then it quits.
+
+126
+00:08:26.090 --> 00:08:28.140
+And then it doesn't continue on.
+
+127
+00:08:28.140 --> 00:08:33.093
+So now I can run this again,
+10, 10 it works.
+
+128
+00:08:34.957 --> 00:08:39.888
+10 and t-e-n, and
+it fails exactly the same way,
+
+129
+00:08:39.888 --> 00:08:45.100
+this part here is exactly
+the same as this part here.
+
+130
+00:08:45.100 --> 00:08:48.290
+The difference was as soon as
+we print this out, we quit, so
+
+131
+00:08:48.290 --> 00:08:50.340
+we don't continue on, okay?
+
+132
+00:08:50.340 --> 00:08:55.070
+So if you're doing really simple input
+checking, sanity checking is one of
+
+133
+00:08:55.070 --> 00:09:00.030
+the things we call this, just is the
+data make sense and don't continue.
+
+134
+00:09:00.030 --> 00:09:03.470
+If the data doesn't make sense,
+if these two statements don't work,
+
+135
+00:09:03.470 --> 00:09:07.970
+then whatever we've been given is
+nonsensical data that we're not
+
+136
+00:09:07.970 --> 00:09:12.720
+capable of handling, okay?
+
+137
+00:09:12.720 --> 00:09:16.690
+So that is how to write exercise 3.2.
+
+138
+00:09:16.690 --> 00:09:23.147
+And I hope that you have found this little
+video useful, and thanks for watching.

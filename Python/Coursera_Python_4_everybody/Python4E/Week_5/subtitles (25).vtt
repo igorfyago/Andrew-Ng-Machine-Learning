@@ -1,0 +1,828 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:10.000
+[MUSIC]
+
+2
+00:00:19.329 --> 00:00:29.329
+[MUSIC]
+
+3
+00:00:30.920 --> 00:00:35.096
+[MUSIC]
+
+4
+00:00:35.096 --> 00:00:39.524
+When you're doing production design 
+there is this idea
+
+5
+00:00:39.524 --> 00:00:42.840
+that you need to be able to 
+build prototypes.
+
+6
+00:00:42.840 --> 00:00:47.220
+Because one of the, in a way, 
+important elements of that
+
+7
+00:00:47.220 --> 00:00:52.030
+discipline is being able to test the
+things you do with people.
+
+8
+00:00:52.030 --> 00:00:54.970
+So, you know, you want to make a website,
+you make the prototype, a
+
+9
+00:00:54.970 --> 00:00:59.340
+mockup of the website, you try it with
+people, you see how they react.
+
+10
+00:00:59.340 --> 00:01:02.220
+And the same thing with physical devices,
+
+11
+00:01:02.220 --> 00:01:04.760
+but physicals means you need to 
+learn about electronics.
+
+12
+00:01:04.760 --> 00:01:08.850
+So we had to create different classes
+that would basically make
+
+13
+00:01:08.850 --> 00:01:13.440
+electronics approachable to people that
+don't have a background in electronics.
+
+14
+00:01:13.440 --> 00:01:17.110
+They next to zero software 
+development background.
+
+15
+00:01:17.110 --> 00:01:20.770
+So, what we did when I started 
+teaching is that I
+
+16
+00:01:20.770 --> 00:01:23.495
+started to experiment with the tools that
+were available on the market.
+
+17
+00:01:23.495 --> 00:01:25.770
+[COUGH] And then I realized 
+there were a number
+
+18
+00:01:25.770 --> 00:01:31.140
+of shortcomings, like, every, designers
+mostly like to use Macs.
+
+19
+00:01:31.140 --> 00:01:35.320
+Mac haven't had serial ports for ages.
+
+20
+00:01:35.320 --> 00:01:37.250
+They all have USB ports.
+
+21
+00:01:37.250 --> 00:01:40.330
+And still, you know, there are
+professionals that have
+
+22
+00:01:40.330 --> 00:01:42.920
+their development tools that 
+are released now in 2013
+
+23
+00:01:42.920 --> 00:01:48.620
+they still only have serial ports, which,
+it's really weird, because I
+
+24
+00:01:48.620 --> 00:01:53.380
+haven't seen a serial port on, 
+on a laptop for a long time.
+
+25
+00:01:53.380 --> 00:01:55.820
+And on desktops, sometimes don't 
+even have them anymore.
+
+26
+00:01:56.970 --> 00:02:02.490
+So we had to make something that would run
+on a Mac, that would be easier to
+
+27
+00:02:02.490 --> 00:02:04.190
+use, that would be cheaper than what was
+
+28
+00:02:04.190 --> 00:02:07.460
+available on the market back then 
+which, you know.
+
+29
+00:02:07.460 --> 00:02:15.060
+And also we had this programming language
+we sort of inherited from the MIT called
+
+30
+00:02:15.060 --> 00:02:19.700
+Processing, which was used to teach about
+programming to artists and designers.
+
+31
+00:02:19.700 --> 00:02:22.390
+So we thought, well, you know, 
+why don't we try to make
+
+32
+00:02:22.390 --> 00:02:26.930
+that run on a microcontroller, so that
+was based on Java.
+
+33
+00:02:26.930 --> 00:02:32.350
+Microcontrollers tend to, they don't
+like Java very, very much.
+
+34
+00:02:32.350 --> 00:02:36.660
+They prefer languages, it's easier to work
+with languages like C++ or C.
+
+35
+00:02:36.660 --> 00:02:39.380
+So we did some experiments, 
+then one student
+
+36
+00:02:39.380 --> 00:02:43.025
+of mine did a thesis on the [UNKNOWN].
+
+37
+00:02:43.025 --> 00:02:46.070
+So different projects sort of 
+followed and then we
+
+38
+00:02:46.070 --> 00:02:49.970
+ended up with the first 
+version of Arduino which,
+
+39
+00:02:49.970 --> 00:02:53.216
+based on the work that this student
+Hernando Barragan
+
+40
+00:02:53.216 --> 00:02:56.980
+did on a project called Wiring, we
+re-implemented it from scratch.
+
+41
+00:02:56.980 --> 00:03:02.010
+So we reused the APIs but we rewrote the
+whole thing to be completely open source,
+
+42
+00:03:02.010 --> 00:03:04.230
+because we also wanted 
+something that would be
+
+43
+00:03:04.230 --> 00:03:07.560
+easy for people to reproduce, 
+to build upon.
+
+44
+00:03:07.560 --> 00:03:11.220
+So we wanted to remove the barriers, and
+one of the things that we did is also
+
+45
+00:03:11.220 --> 00:03:17.800
+that, since at the time we haven't got, in
+a way, a clue how we were
+
+46
+00:03:17.800 --> 00:03:20.840
+going to manufacture, 
+we didn't want to set up
+
+47
+00:03:20.840 --> 00:03:24.330
+like a classic manufacturing 
+company, or go to a
+
+48
+00:03:24.330 --> 00:03:27.210
+venture capitalist or something 
+because obviously there was,
+
+49
+00:03:27.210 --> 00:03:29.820
+back then nobody would have 
+even talked to us.
+
+50
+00:03:29.820 --> 00:03:32.280
+So we thought, you know, let's release the
+hardware as open source so that
+
+51
+00:03:32.280 --> 00:03:34.750
+people can build it if they want to.
+
+52
+00:03:34.750 --> 00:03:38.000
+And they started to make, we just started
+to make the PCBs of the sort of two-hole
+
+53
+00:03:38.000 --> 00:03:43.530
+version and, and so we, we would just
+give them away to people as a gift.
+
+54
+00:03:43.530 --> 00:03:46.240
+So, just take this PCB, assemble one.
+
+55
+00:03:46.240 --> 00:03:49.000
+And some people started to assemble it.
+So they went on the website,
+
+56
+00:03:49.000 --> 00:03:52.030
+they got the instructions, 
+they started to write.
+
+57
+00:03:53.180 --> 00:03:57.410
+That's to, to download the code, 
+to solder the, the boards.
+
+58
+00:03:57.410 --> 00:04:01.540
+And so we got some feedback and we started
+to build up a little bit of an audience.
+
+59
+00:04:01.540 --> 00:04:05.460
+And, and, you know, that's, that's 
+how we started.
+
+60
+00:04:05.460 --> 00:04:07.190
+>> So, so, talk a little bit about the
+
+61
+00:04:07.190 --> 00:04:11.780
+the transition from people coming in to
+the four-week class and
+
+62
+00:04:11.780 --> 00:04:13.210
+spending the first three days soldering
+
+63
+00:04:13.210 --> 00:04:15.995
+to the, to the sort of scaled-up
+manufacture.
+
+64
+00:04:15.995 --> 00:04:16.710
+>> [LAUGH].
+
+65
+00:04:16.710 --> 00:04:18.100
+>> I mean, what happened?
+
+66
+00:04:18.100 --> 00:04:20.160
+How, how did you get pushed?
+
+67
+00:04:20.160 --> 00:04:21.685
+What triggered the
+
+68
+00:04:21.685 --> 00:04:24.600
+>> Well, we started to do 
+introductory workshops
+
+69
+00:04:24.600 --> 00:04:26.450
+for people outside of the school.
+
+70
+00:04:26.450 --> 00:04:30.500
+I originally started this project with a
+friend of mine called Avit Quartinas
+
+71
+00:04:30.500 --> 00:04:36.020
+who teaches in Sweden, and the two of us
+both had similar issues
+
+72
+00:04:36.020 --> 00:04:40.280
+with our students. We wanted to, you know,
+there was a bunch of input that
+
+73
+00:04:40.280 --> 00:04:44.900
+we gathered and so we started to make the
+first of the two-hole versions.
+
+74
+00:04:44.900 --> 00:04:49.250
+Then we met an engineer that was 
+living and working
+
+75
+00:04:49.250 --> 00:04:52.750
+in Ivrea that had experience in
+manufacturing stuff.
+
+76
+00:04:52.750 --> 00:04:54.710
+He was actually helping me a lot when,
+
+77
+00:04:54.710 --> 00:04:57.690
+whenever the school wanted to manufacture
+something with electronics.
+
+78
+00:04:57.690 --> 00:05:01.660
+I would ask this, Gianluca Martino 
+is his name,
+
+79
+00:05:01.660 --> 00:05:04.280
+I would ask Gianluca to help me do that.
+
+80
+00:05:04.280 --> 00:05:08.730
+So I said, well, you know, can we
+manufacture 200 of these pre-made?
+
+81
+00:05:08.730 --> 00:05:10.880
+That we can just, you know, 
+sell to people? 
+
+82
+00:05:10.880 --> 00:05:14.080
+And then me and David managed 
+to convince both Ivrea
+
+83
+00:05:14.080 --> 00:05:17.540
+and the school in Marma to
+buy 50 each.
+
+84
+00:05:17.540 --> 00:05:22.547
+So 100 were sold and then we said, you know,
+let's see if we can sell the other 100.
+
+85
+00:05:23.600 --> 00:05:24.630
+You know, who cares?
+
+86
+00:05:24.630 --> 00:05:26.600
+>> What, on a website or something?
+
+87
+00:05:26.600 --> 00:05:29.600
+>> Well, we started to actually sell them
+like this, like in this, by hand,
+
+88
+00:05:29.600 --> 00:05:33.150
+by sort of really like saying okay,
+
+89
+00:05:33.150 --> 00:05:36.100
+I'm going to run a workshop 
+in this place, I need 20 boards
+
+90
+00:05:36.100 --> 00:05:40.250
+and we would just sell them to
+people at the moment.
+
+91
+00:05:40.250 --> 00:05:42.470
+The platform was unknown, it was not
+
+92
+00:05:42.470 --> 00:05:45.610
+really proven, we were 
+at the beginning.
+
+93
+00:05:45.610 --> 00:05:48.240
+Luckily we did some public 
+demonstrations of how
+
+94
+00:05:48.240 --> 00:05:51.650
+you can do with this, 
+and people understood.
+
+95
+00:05:51.650 --> 00:05:53.750
+So some people in different communities
+started to put out the
+
+96
+00:05:53.750 --> 00:05:57.167
+word that there was this Arduino thing
+that was very promising.
+
+97
+00:05:57.167 --> 00:06:01.570
+So we got people. We organized a
+workshop at the end of 2005 in London,
+
+98
+00:06:01.570 --> 00:06:06.760
+which was the first workshop where really
+we put an ad and people paid and came.
+
+99
+00:06:06.760 --> 00:06:09.460
+I think there were a number of events
+that lined up
+
+100
+00:06:09.460 --> 00:06:13.000
+that created, kind of fueled, this kind
+of viral aspect.
+
+101
+00:06:13.000 --> 00:06:18.200
+So, obviously, first of all, we had a
+friend that was teaching
+
+102
+00:06:18.200 --> 00:06:23.350
+these kind of topics in the U.S. 
+at NYU in a school called ITP.
+
+103
+00:06:24.370 --> 00:06:26.800
+And he had a much bigger 
+number of students.
+
+104
+00:06:26.800 --> 00:06:28.490
+He had something like 120 students.
+
+105
+00:06:29.960 --> 00:06:33.920
+And so, we met him one summer 
+in Italy, doing
+
+106
+00:06:33.920 --> 00:06:36.773
+a work, a project together and we
+showed him Arduino, 
+
+107
+00:06:36.773 --> 00:06:38.300
+he started to play with it, he thought,
+
+108
+00:06:38.300 --> 00:06:40.960
+okay, I like this. We can go 
+somewhere with this thing.
+
+109
+00:06:40.960 --> 00:06:44.788
+So he brought back a few prototypes, we
+shipped him a few more boards.
+
+110
+00:06:44.788 --> 00:06:48.900
+And he started to use it with some of the
+second-year students.
+
+111
+00:06:48.900 --> 00:06:53.510
+And then at some point in 2006, I think, the
+platform started to work properly.
+
+112
+00:06:53.510 --> 00:06:56.570
+You could do good projects with it.
+
+113
+00:06:56.570 --> 00:06:59.591
+And so the first-year students they saw
+what the second-year students
+
+114
+00:06:59.591 --> 00:07:03.540
+were doing and they said well you know we
+want that Arduino ourselves.
+
+115
+00:07:03.540 --> 00:07:09.790
+So I would say that generated, that kind of
+gave us 120 power users.
+
+116
+00:07:09.790 --> 00:07:12.560
+People who make beautiful projects 
+and designers
+
+117
+00:07:12.560 --> 00:07:15.220
+of these features, that tend to take
+
+118
+00:07:15.220 --> 00:07:17.310
+their projects and document 
+them very nicely
+
+119
+00:07:17.310 --> 00:07:20.150
+put them online because 
+it's their portfolio.
+
+120
+00:07:20.150 --> 00:07:22.990
+Well with Arduino the idea is that you
+download a file, you plug
+
+121
+00:07:22.990 --> 00:07:27.180
+the board, okay back in the days you had
+to install a few drivers.
+
+122
+00:07:27.180 --> 00:07:31.420
+But then, you know, in the space of a hour
+or something you were working.
+
+123
+00:07:31.420 --> 00:07:32.210
+>> You got a blinking LED.
+
+124
+00:07:32.210 --> 00:07:36.270
+>> Yeah, the blinking LED was
+the hello world.
+
+125
+00:07:36.270 --> 00:07:40.390
+The blinking LED is the hello world 
+of physical computing.
+
+126
+00:07:40.390 --> 00:07:44.170
+So yeah, I think this viral aspect also
+coupled with the fact that
+
+127
+00:07:44.170 --> 00:07:48.620
+we asked SparkFun Electronics, 
+their online store
+
+128
+00:07:48.620 --> 00:07:52.550
+was again beginning to become 
+very successful.
+
+129
+00:07:52.550 --> 00:07:55.390
+So we asked Nathan to carry Arduino,
+
+130
+00:07:55.390 --> 00:07:58.840
+you know, and he sort of graciously 
+accepted to do that.
+
+131
+00:07:58.840 --> 00:08:04.580
+And so we, he kind of fueled our 
+growth in the U.S. Then
+
+132
+00:08:04.580 --> 00:08:10.830
+me and David Cuartielles spent 
+many, a number of years
+
+133
+00:08:10.830 --> 00:08:15.760
+traveling around the world, but mostly in
+Europe at the beginning, doing workshops.
+
+134
+00:08:16.830 --> 00:08:20.090
+And we, you know, sometimes for free.
+
+135
+00:08:20.090 --> 00:08:24.240
+You know, just going somewhere and, you
+know, sleeping in a
+
+136
+00:08:25.280 --> 00:08:27.980
+>> Couch
+>> Whatever we could sleep.
+
+137
+00:08:27.980 --> 00:08:31.370
+Yeah, and then run workshops and that
+
+138
+00:08:31.370 --> 00:08:33.570
+obviously kind of fueled 
+that kind of aspect.
+
+139
+00:08:33.570 --> 00:08:37.770
+But then it was a lot of people making
+projects, documenting them,
+
+140
+00:08:37.770 --> 00:08:40.680
+putting them online and then sharing
+
+141
+00:08:40.680 --> 00:08:43.410
+information about how they 
+built the product.
+
+142
+00:08:43.410 --> 00:08:48.560
+>> Where do you think this thing is
+going to go and what, what, what
+
+143
+00:08:48.560 --> 00:08:51.916
+are your, some of your dreams of how it
+could sort of change our world
+
+144
+00:08:51.916 --> 00:08:54.543
+>> [LAUGH]
+>> in powerful ways?.
+
+145
+00:08:54.543 --> 00:09:00.340
+>> Well, in a way I think there's a 
+wider, wider discussion
+
+146
+00:09:00.340 --> 00:09:06.680
+about empowering people to be 
+creative with technology.
+
+147
+00:09:06.680 --> 00:09:09.930
+So because obviously nowadays 
+the world that's around us
+
+148
+00:09:09.930 --> 00:09:12.740
+is made a lot of digital technology.
+
+149
+00:09:13.870 --> 00:09:19.193
+And there is an, there is a trend that I'm
+not particularly happy with
+
+150
+00:09:19.193 --> 00:09:24.860
+where people just buy devices and they
+just use the devices, but they are not
+
+151
+00:09:24.860 --> 00:09:31.280
+aware of how you program, how you design,
+you build things with the device.
+
+152
+00:09:31.280 --> 00:09:38.850
+So, you know, for me the iPad sometimes is
+the TV set of the 21st Century, you know.
+
+153
+00:09:38.850 --> 00:09:41.070
+Obviously at home I have an iPad 
+and I use it for a TV, because
+
+154
+00:09:41.070 --> 00:09:43.700
+you're browsing the Web, you're
+
+155
+00:09:43.700 --> 00:09:46.430
+watching TV, you're maybe
+listening to music.
+
+156
+00:09:48.690 --> 00:09:52.280
+Yeah, you can create with the iPad with
+certain applications, but it's
+
+157
+00:09:52.280 --> 00:09:58.360
+not something's that kind of makes you
+want to program the device to do more.
+
+158
+00:09:58.360 --> 00:10:02.460
+And, and I think it's important,
+especially for kids to, for them to
+
+159
+00:10:02.460 --> 00:10:06.550
+understand that the world we live in,
+now especially if you look at
+
+160
+00:10:06.550 --> 00:10:12.000
+this room, this is a building that was
+made, designed by human beings, built
+
+161
+00:10:12.000 --> 00:10:17.240
+by human beings, every single bit was
+designed and built by a human being.
+
+162
+00:10:17.240 --> 00:10:20.060
+So clearly, if you know how to design and
+
+163
+00:10:20.060 --> 00:10:23.830
+build things, you can affect the world
+that's around you.
+
+164
+00:10:23.830 --> 00:10:30.090
+If you are not able to participate in this,
+in the world of creation
+
+165
+00:10:30.090 --> 00:10:34.330
+in the digital space, you're left out.
+
+166
+00:10:34.330 --> 00:10:36.360
+Somebody else is going to 
+design your world.
+
+167
+00:10:37.370 --> 00:10:43.000
+At some point, you know, if there's no
+innovation, if there is no sort
+
+168
+00:10:43.000 --> 00:10:48.780
+of renovation, in a way, inside the
+marketplace, then one company
+
+169
+00:10:48.780 --> 00:10:52.440
+decides that that's the way you do a
+certain thing, and that becomes
+
+170
+00:10:52.440 --> 00:10:57.410
+the only answer to a certain question and
+nobody starts to debate that.
+
+171
+00:10:57.410 --> 00:11:04.585
+Or, you know in a way I think it's
+important to be masters of the technology.
+
+172
+00:11:04.585 --> 00:11:05.162
+[SOUND]
+
+173
+00:11:05.162 --> 00:11:15.162
+[MUSIC]
