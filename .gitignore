@@ -176,3 +176,6 @@ $RECYCLE.BIN/
 
 # End of https://www.gitignore.io/api/macos,pycharm,windows,intellij
 Java/.idea/workspace.xml
+Python/Game-AI
+Python/CoreyMSchafer
+Python/atari-py
