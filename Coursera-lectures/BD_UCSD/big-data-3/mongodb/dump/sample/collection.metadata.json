@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":1,"key":{"_id":1},"name":"_id_","ns":"sample.collection"},{"v":1,"key":{"tweet_ID":-1.0},"name":"tweet_ID_-1","ns":"sample.collection"}]}
