@@ -1,6 +1,6 @@
 # Machine Learning with Aitor & Igor
 
-One Paragraph of project description goes here
+This is just our shared study group repo. By the way... the rest of text on this readme is just filler =).
 
 ## Getting Started
 
